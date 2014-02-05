@@ -1,0 +1,56 @@
+@-ms-viewport {
+  width: device-width;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (min-width: 1200px) {
+  .numbers {
+    font-size: 500px;
+  }
+  
+  .headings h1 {
+    font-size: 180px;
+    padding: 57px 0 0 0;
+  }
+  
+  .headings h2 {
+    font-size: 187px;
+    margin: 0;
+    padding: 20px 0 0 0;
+  }
+  
+  .leadin {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 979px) {
+
+}
+
+@media (min-width: 980px) {
+
+}
