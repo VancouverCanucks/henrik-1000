@@ -8,6 +8,34 @@ body {
   color: white;
 }
 
+.bookmark {
+  width: 100%;
+  height: 192px;
+}
+
+.bookmark.pin {
+  position: absolute;
+  top: 1540px;
+}
+
+.bookmark.move {
+  position: fixed;
+  top: 150px;
+}
+
+.bookmark .tip {
+  width: 162px;
+  height: 192px;
+  background: url('../img/ui/bookmark.png') no-repeat;
+  background-position: bottom center;
+  margin: 0 auto;
+}
+
+.bookmark-marker {
+  width: 100%;
+  height: 1px;
+}
+
 .container {
   width: 100%;
 }
@@ -66,10 +94,14 @@ section {
   text-align: center;
   width: 100%;
   clear: both;
+  padding: 0 0 0 0;
 }
 
-#s2 {
-  
+.overlay-timeline {
+  height: 66px;
+  width: 100%;
+  background: url(../img/ui/timeline.png) repeat-y;
+  background-position: top center;
 }
 
 .timeline {
