@@ -15,6 +15,10 @@
 }
 
 @media (min-width: 1520px) {
+  .bookmark.pin {
+    top: 1540px;
+  }
+  
   .numbers {
     font-size: 500px;
   }
@@ -56,6 +60,10 @@
 }
 
 @media (min-width: 980px) and (max-width: 1519px) {
+  .bookmark.pin {
+    top: 1280px;
+  }
+  
   .numbers {
     font-size: 300px;
   }
@@ -73,5 +81,9 @@
   
   .leadin {
     font-size: 20px;
+  }
+  
+  .timeline .year {
+    font-size: 250px;
   }
 }
