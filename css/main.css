@@ -3,14 +3,10 @@
   padding: 0;
 }
 
-body {
-  background: #003c7c;
-  color: white;
-}
-
 .bookmark {
   width: 100%;
   height: 192px;
+  z-index: 999999;
 }
 
 .bookmark.pin {
@@ -42,6 +38,16 @@ body {
 
 section {
   width: 100%;
+}
+
+section.dark {
+  color: white;
+  background: #003c7c;
+}
+
+section.light {
+  color: #003c7c;
+  background: white;
 }
 
 .window {
@@ -97,6 +103,15 @@ section {
   padding: 0 0 0 0;
 }
 
+#s3 {
+  height: 800px;
+}
+
+#s4 {
+  background: white;
+  height: 800px;
+}
+
 .overlay-timeline {
   height: 66px;
   width: 100%;
@@ -107,6 +122,118 @@ section {
 .timeline {
   height: 100%;
   width: 100%;
+}
+
+.dark .timeline {
   background: url(../img/ui/timeline.png) repeat-y;
   background-position: top center;
+}
+
+.light .timeline {
+  background: url(../img/ui/timeline-dark.png) repeat-y;
+  background-position: top center;
+}
+
+.timeline .point {
+  width: 49%;
+}
+
+.timeline .point.left {
+  float: left;
+  margin-left: 1.4%;
+}
+
+.timeline .point.right {
+  float: right;
+  margin-right: 1.4%;
+}
+
+.timeline .point .o {
+  position: relative;
+  top: 38px;
+}
+
+.timeline .point .leash {
+  height: 3px;
+  width: 30%;
+  margin-top: 45px;
+}
+
+.dark .timeline .point .leash {
+  background: white;
+}
+
+.timeline .point .leash {
+  background: #003c7c;
+}
+
+.timeline .content {
+  width: 60%;
+}
+
+.dark .timeline .content {
+  border: 3px solid white;
+}
+
+.light .timeline .content {
+  border: 3px solid #003c7c;
+}
+
+.timeline .point.left .o {
+  float: right;
+}
+
+.timeline .point.right .o {
+  float: left;
+}
+
+.timeline .point.left .leash {
+  float: right;
+}
+
+.timeline .point.right .leash {
+  float: left;
+}
+
+.timeline .point.left .content {
+  float: right;
+}
+
+.timeline .point.right .content {
+  float: left;
+}
+
+.timeline .content h3 {
+  font-size: 30px;
+  margin: 0;
+  padding: 10px 0 0 10px;
+}
+
+.timeline .content p {
+  padding: 10px;
+  margin: 0;
+}
+
+#t1 {
+  position: relative;
+  top: 100px;
+}
+
+#t2 {
+  position: relative;
+  top: 100px;
+}
+
+#t3 {
+  position: relative;
+  top: 300px;
+}
+
+#t4 {
+  position: relative;
+  top: 500px;
+}
+
+.clear {
+  clear: both;
 }
