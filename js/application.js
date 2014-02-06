@@ -14,7 +14,14 @@
     Scroller.prototype.initUI = function() {
       $('.window').each(function(i) {
         asset = $(this).children('.asset')[0];
-        $(this).css('background-image', 'url(' + asset.src + ')').css('height', asset.height + 'px');
+        styles = {
+          'background-image': 'url(' + asset.src + ')',
+          'height': asset.height + 'px',
+          'background-repeat': 'no-repeat',
+          'background-size': 'cover',
+          'background-position': 'top center'
+        };
+        $(this).css(styles);
       });
     }
     

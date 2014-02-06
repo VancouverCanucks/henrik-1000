@@ -14,7 +14,7 @@
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1520px) {
   .numbers {
     font-size: 500px;
   }
@@ -51,6 +51,23 @@
 
 }
 
-@media (min-width: 980px) {
-
+@media (min-width: 980px) and (max-width: 1519px) {
+  .numbers {
+    font-size: 300px;
+  }
+  
+  .headings h1 {
+    font-size: 110px;
+    padding: 35px 0 0 0;
+  }
+  
+  .headings h2 {
+    font-size: 113px;
+    margin: 0;
+    padding: 13px 0 0 0;
+  }
+  
+  .leadin {
+    font-size: 20px;
+  }
 }
