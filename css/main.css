@@ -15,7 +15,7 @@
 
 .bookmark.move {
   position: fixed;
-  top: 150px;
+  top: 300px;
 }
 
 .bookmark .tip {
@@ -286,4 +286,9 @@ section.light {
 
 #p05 {
   top: 5600px;
+}
+
+#trigger02-clipping {
+  position: absolute;
+  top: 2550px;
 }
