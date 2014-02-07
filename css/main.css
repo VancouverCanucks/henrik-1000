@@ -88,24 +88,6 @@ section.light {
   border-bottom: 3px solid white;
 }
 
-#s2, #s3, #s4, #s5 {
-  height: 1500px;
-}
-
-#s1 .leadin {
-  font-style: italic;
-  text-align: center;
-  width: 100%;
-  clear: both;
-  padding: 0 0 0 0;
-}
-
-#s3 {
-}
-
-#s4 {
-}
-
 .overlay-timeline {
   height: 66px;
   width: 100%;
@@ -227,6 +209,27 @@ section.light {
   display: block;
 }
 
+.timeline .prop {
+  position: absolute;
+  display: none;
+}
+
+.clear {
+  clear: both;
+}
+
+#s2, #s3, #s4, #s5 {
+  height: 1500px;
+}
+
+#s1 .leadin {
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+  clear: both;
+  padding: 0 0 0 0;
+}
+
 #t1 {
   top: 100px;
 }
@@ -263,6 +266,24 @@ section.light {
   padding: 100px 0 0 0;
 }
 
-.clear {
-  clear: both;
+#p01 {
+  right: 20px;
+}
+
+#p02 {
+  top: 3200px;
+}
+
+#p03 {
+  right: 20px;
+  top: 3801px;
+}
+
+#p04 {
+  right: 100px;
+  top: 4650px;
+}
+
+#p05 {
+  top: 5600px;
 }

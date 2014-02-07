@@ -39,7 +39,7 @@
             </div>
             <div class="leadin agenda">
               <p>scroll down to discover more</p>
-              <div class="bookmark-marker" callback="toggleBookmark"></div>
+              <div id="trigger01-bookmark" callback="toggleBookmark" class="trigger"></div>
               <img src="img/ui/down-arrow.png">
               <div class="overlay-timeline"></div>
             </div> 
@@ -66,13 +66,21 @@
           <div class="timeline">
             <div class="year agencyb">
               <span id="y00">2000</span>
+              <div id="trigger03-xo" callback="toggleXO" class="trigger"></div>
             </div>
+            <div class="prop" id="p01"><img src="img/props/newspaper-clipping.gif"></div>
+            <div class="prop" id="p02">
+              <img src="img/props/xo-33.png">
+              <img src="img/props/xo-22.png">
+            </div>
+            <div class="prop" id="p03"><img src="img/props/henrik-skater.gif"></div>
             <div class="point left" id="t2">
               <div class="o"><img src="img/ui/timeline-bip-dark.png"></div>
               <div class="leash"></div>
               <div class="content">
                 <h3><span class="agencyb">First NHL Game</span> - <span class="agency">Oct.05.00</span></h3>
-                <p class="agenda">Played his first game against the Philadelphia Flyers. Henrik and Daniel becom the fourth pair of twins to play in the NHL</p>
+                <div id="trigger02-bookmark" callback="toggleNewsClipping" class="trigger"></div>
+                <p class="agenda">Played his first game against the Philadelphia Flyers. Henrik and Daniel became the fourth pair of twins to play in the NHL</p>
               </div>
             </div>
             
@@ -82,6 +90,7 @@
               <div class="content">
                 <h3><span class="agencyb">First NHL Assist</span> - <span class="agency">Oct.06.00</span></h3>
                 <p class="agenda">First assist in the NHL, scored against the Florida Panthers</p>
+                <div id="trigger04-skate" callback="toggleSkateIn" class="trigger"></div>
               </div>
             </div>
             
@@ -107,12 +116,21 @@
               <span id="y10">2010</span>
             </div>
             
+            <div class="prop" id="p04"><img src="img/props/a.png"></div>
+            <div class="prop" id="p05">
+              <img src="img/props/hat1.gif">
+              <img src="img/props/hat2.gif">
+              <img src="img/props/hat3.gif">
+              <img src="img/props/hat4.gif">
+            </div>
+            
             <div class="point left" id="t5">
               <div class="o"><img src="img/ui/timeline-bip.png"></div>
               <div class="leash"></div>
               <div class="content">
                 <h3><span class="agencyb">March to Remember</span> - <span class="agency">Mar.09</span></h3>
                 <p class="agenda">Set a franchise record for most points in a month with 19</p>
+                <div id="trigger05-a" callback="toggleA" class="trigger"></div>
               </div>
             </div>
             
@@ -122,6 +140,7 @@
               <div class="content">
                 <h3><span class="agencyb">Alternate Captain</span> - <span class="agency">Sep.30.09</span></h3>
                 <p class="agenda">Named alternate captain</p>
+                <div id="trigger06-hats" callback="toggleHats" class="trigger"></div>
               </div>
             </div>
             
@@ -133,6 +152,15 @@
                 <p class="agenda">Scored his first career hat-trick vs. Colorado Avalanche</p>
               </div>
             </div>
+            
+            <div class="clear"></div>
+            
+          </div>
+        </section>
+        
+        <section id="s4" class="light">
+          <div class="timeline">
+ 
             
             <div class="clear"></div>
             
