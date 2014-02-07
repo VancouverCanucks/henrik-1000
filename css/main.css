@@ -272,10 +272,32 @@ section.light {
 
 #p02 {
   top: 3200px;
+  height: 525px;
+  width: 606px;
+  display: block;
+}
+
+#p02 .xo-22 {
+  background: url('../img/props/xo-22.png') no-repeat;
+  background-position: bottom center;
+  width: 303px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 0 303px;
+}
+
+#p02 .xo-33 {
+  background: url('../img/props/xo-33.png') no-repeat;
+  background-position: bottom center;
+  width: 303px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
 }
 
 #p03 {
-  right: 20px;
+  right: -686px;
   top: 3801px;
 }
 

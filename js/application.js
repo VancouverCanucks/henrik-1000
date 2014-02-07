@@ -50,11 +50,25 @@
     }
     
     Scroller.prototype.toggleXO = function() {
-      $('#p02').fadeToggle();
+      el22 = $('.xo-22');
+      el33 = $('.xo-33');
+      console.log(el22.css('height'));
+      if (el22.css('height') !== '525px') {
+        el22.show().animate({height:525},400);
+        el33.show().delay(400).animate({height:525},400);
+      } else {
+        el22.fadeOut(200).css('height', 0);
+        el33.fadeOut(200).css('height', 0);
+      }
     }
     
     Scroller.prototype.toggleSkateIn = function() {
-      $('#p03').fadeToggle();
+      el = $('#p03');
+      if (el.css('right') === '-686px') {
+        el.show().animate({right: '20px'}, 500);
+      } else {
+        el.show().animate({right: '-686px'}, 500);
+      }
     }
     
     Scroller.prototype.toggleA = function() {
