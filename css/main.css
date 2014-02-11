@@ -273,7 +273,6 @@ section.light {
 #p02 {
   top: 3200px;
   height: 525px;
-  width: 606px;
   display: block;
 }
 
@@ -284,7 +283,7 @@ section.light {
   height: 0;
   position: absolute;
   bottom: 0;
-  margin: 0 0 0 303px;
+  background-size: cover;
 }
 
 #p02 .xo-33 {
@@ -294,6 +293,7 @@ section.light {
   height: 0;
   position: absolute;
   bottom: 0;
+  background-size: cover;
 }
 
 #p03 {
@@ -301,16 +301,6 @@ section.light {
   top: 3801px;
 }
 
-#p04 {
-  right: 100px;
-  top: 4650px;
-}
-
 #p05 {
   top: 5600px;
-}
-
-#trigger02-clipping {
-  position: absolute;
-  top: 2550px;
 }

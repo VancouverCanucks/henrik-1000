@@ -23,10 +23,21 @@
         };
         $(this).css(styles);
       });
+      
+      this.fit();
+      
+      $(window).on('resize', function() {
+        window.scroller.fit();
+        console.log('resized');
+      });
     }
     
     Scroller.prototype.initSSOR = function() {
       this.ssor = $.superscrollorama();
+    }
+    
+    Scroller.prototype.fit = function() {
+      
     }
     
     Scroller.prototype.scrollListener = function() {
@@ -50,11 +61,12 @@
     }
     
     Scroller.prototype.toggleXO = function() {
+      prop = $('#p02');
       el22 = $('.xo-22');
       el33 = $('.xo-33');
-      if (el22.css('height') !== '525px') {
-        el22.show().animate({height:525},400);
-        el33.show().delay(400).animate({height:525},400);
+      if (el22.css('height') == '0px' || el22.css('height') == '0') {
+        el22.show().animate( { height: prop.height() }, 400);
+        el33.show().delay(400).animate( { height: prop.height() }, 400);
       } else {
         el22.fadeOut(200).delay(200).css('height', 0);
         el33.fadeOut(200).delay(200).css('height', 0);
@@ -64,9 +76,9 @@
     Scroller.prototype.toggleSkateIn = function() {
       el = $('#p03');
       if (el.css('right') === '-686px') {
-        el.show().animate({right: '20px'}, 500);
+        el.show().animate({ right: '20px' }, 500);
       } else {
-        el.show().animate({right: '-686px'}, 500);
+        el.animate({ right: '-686px' }, 500).delay(500).fadeOut();
       }
     }
     
