@@ -7,7 +7,6 @@
     function Scroller() {
       window.scroller = this;
       this.initUI();
-      this.initSSOR();
       this.scrollListener();
     }
     
@@ -30,10 +29,6 @@
         window.scroller.fit();
         console.log('resized');
       });
-    }
-    
-    Scroller.prototype.initSSOR = function() {
-      this.ssor = $.superscrollorama();
     }
     
     Scroller.prototype.fit = function() {
