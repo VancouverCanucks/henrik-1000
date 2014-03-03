@@ -67,14 +67,6 @@ section.light {
   margin: 0 auto;
 }
 
-.numbers {
-  color: #265990;
-  font-size: 300%;
-  width: 30%;
-  text-align: right;
-  margin-right: 3%;
-}
-
 .h {
   width: 66%;
 }
@@ -82,10 +74,19 @@ section.light {
 .headings h1 {
   margin: 0;
   padding: 0;
+  text-align: center;
+  letter-spacing: 15px;
 }
 
-.headings h1 span {
-  border-bottom: 3px solid white;
+.headings h2 {
+  color: #809ebe;
+  text-align: center;
+  letter-spacing: 15px;
+}
+
+.headings h2 span {
+  border-top: 1px solid #809ebe;
+  padding-top: 15px;
 }
 
 .overlay-timeline {
@@ -228,6 +229,7 @@ section.light {
   width: 100%;
   clear: both;
   padding: 0 0 0 0;
+  margin-top: 50px;
 }
 
 #t1 {
