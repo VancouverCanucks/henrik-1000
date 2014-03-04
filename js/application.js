@@ -1,11 +1,53 @@
 (function($) {
-  
+    
   var Scroller;
   
   Scroller = (function() {
     
     function Scroller() {
       window.scroller = this;
+      this.loadData = 0;
+      this.loaded = 0;
+      this.preload();
+    }
+    
+    Scroller.prototype.preload = function() {
+      if (!this.checkForCrapBrowser()) {
+        $.ajax({
+          url: 'js/manifest.json',
+          dataType: 'json'
+        }).done(function(json) {
+          window.scroller.loadData = json.images;
+          bank = document.getElementById('imagebank');
+          for (a in window.scroller.loadData) {
+            i = document.createElement('img');
+            i.src = window.scroller.loadData[a].src;
+            i.setAttribute('onload', 'javascript:window.scroller.preloadProgress(\'' + window.scroller.loadData[a].src + '\', \'' + window.scroller.loadData[a].holder + '\', ' + i.height + ');');
+            bank.appendChild(i);
+          }
+        });
+      } else { this.initScroller(); }
+    }
+    
+    Scroller.prototype.preloadProgress = function(image, holder, height) {
+      styles = {
+        'background-image': 'url(' + image + ')',
+        'height': height + 'px',
+        'background-repeat': 'no-repeat',
+        'background-size': 'cover',
+        'background-position': 'top center'
+      };
+      $(holder).css(styles);
+      this.loaded++;
+      if (this.loaded >= this.loadData.length) {
+        this.initScroller();
+      }
+    }
+    
+    Scroller.prototype.initScroller = function() {
+      $('.preloader').fadeOut();
+      $('.container').fadeIn();
+      $('.bookmark').fadeIn();
       this.initUI();
       this.scrollListener();
     }
@@ -27,12 +69,19 @@
       
       $(window).on('resize', function() {
         window.scroller.fit();
-        console.log('resized');
       });
     }
     
     Scroller.prototype.fit = function() {
       
+    }
+    
+    Scroller.prototype.checkForCrapBrowser = function() {
+      if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)) {
+        ieversion = new Number(RegExp.$1);
+        return (ieversion < 8) ? true : false;
+      }
+      return false;
     }
     
     Scroller.prototype.scrollListener = function() {

@@ -3,10 +3,73 @@
   padding: 0;
 }
 
+body {
+  background: #003c7c;
+}
+
+#imagebank {
+  display: none;
+}
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  color: white;
+}
+
+.preloader .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #003c7c;
+  opacity: 0.8;
+}
+
+.preloader .content-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.preloader .content {
+  width: 80%;
+  margin: 20% auto 0 auto;
+  position: relative;
+}
+
+.preloader .content .progressbar {
+  width: 100%;
+  border: 3px solid white;
+  border-radius: 15px;
+  height: 50px;
+}
+
+.preloader .content .progressbar span {
+  background: white;
+  display: block;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.preloader .content p {
+  font-size: 50px;
+  text-align: center;
+}
+
+.container, .bookmark {
+  display: none;
+}
+
 .bookmark {
   width: 100%;
   height: 192px;
-  z-index: 999999;
+  z-index: 100;
 }
 
 .bookmark.pin {
