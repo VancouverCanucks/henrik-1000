@@ -102,6 +102,7 @@
     
     Scroller.prototype.initVideos = function() {
       this.youtubeEmbed('3-tXCaeH_WU', 'vid1');
+      this.youtubeEmbed('Bq-aOBsr3hc', 'vid3');
     }
     
     Scroller.prototype.scrollListener = function() {
