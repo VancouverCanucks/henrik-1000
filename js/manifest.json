@@ -2,7 +2,7 @@
   "images": [
     {
       "src": "img/photobgs/01-captain.jpg",
-      "holder": "#s6"
+      "holder": "#s12"
     },
     {
       "src": "img/photobgs/01-draft.jpg",
@@ -14,7 +14,11 @@
     },
     {
       "src": "img/photobgs/01-stanleycup.jpg",
-      "holder": "#s7"
+      "holder": "#s13"
+    },
+    {
+      "src": "img/photobgs/01-congrats.jpg",
+      "holder": "#s15"
     }
   ]
 }
