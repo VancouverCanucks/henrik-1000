@@ -22,17 +22,17 @@
           for (a in window.scroller.loadData) {
             i = document.createElement('img');
             i.src = window.scroller.loadData[a].src;
-            i.setAttribute('onload', 'javascript:window.scroller.preloadProgress(\'' + window.scroller.loadData[a].src + '\', \'' + window.scroller.loadData[a].holder + '\', ' + i.height + ');');
+            i.setAttribute('holder', window.scroller.loadData[a].holder);
+            i.setAttribute('onload', 'javascript:window.scroller.preloadProgress(\'' + window.scroller.loadData[a].src + '\', \'' + window.scroller.loadData[a].holder + '\');');
             bank.appendChild(i);
           }
         });
       } else { this.initScroller(); }
     }
     
-    Scroller.prototype.preloadProgress = function(image, holder, height) {
+    Scroller.prototype.preloadProgress = function(image, holder) {
       styles = {
         'background-image': 'url(' + image + ')',
-        'height': height + 'px',
         'background-repeat': 'no-repeat',
         'background-size': 'cover',
         'background-position': 'top center'
@@ -45,10 +45,22 @@
       }
     }
     
+    Scroller.prototype.setWindowHeights = function() {
+      $('#imagebank img').each(function(n) {
+        console.log($(this).height());
+        i = $(this);
+        $(i.attr('holder')).height(i.height());
+      });
+      $('#imagebank').hide();
+    }
+    
     Scroller.prototype.initScroller = function() {
+      this.setWindowHeights();
+      
       $('.preloader').fadeOut();
       $('.container').fadeIn();
       $('.bookmark').fadeIn();
+      
       this.initUI();
       this.initVideos();
       this.scrollListener();
@@ -56,15 +68,7 @@
     
     Scroller.prototype.initUI = function() {
       $('.window').each(function(i) {
-        asset = $(this).children('.asset')[0];
-        styles = {
-          'background-image': 'url(' + asset.src + ')',
-          'height': asset.height + 'px',
-          'background-repeat': 'no-repeat',
-          'background-size': 'cover',
-          'background-position': 'top center'
-        };
-        $(this).css(styles);
+        $(this).height();
       });
       
       this.fit();
@@ -113,6 +117,14 @@
         $('.bookmark').removeClass('pin').addClass('move');
       } else {
         $('.bookmark').removeClass('move').addClass('pin');
+      }
+    }
+    
+    Scroller.prototype.parkYoungBookmark = function() {
+      if ($('.bookmark').hasClass('park')) {
+        $('.bookmark').removeClass('park').addClass('move');
+      } else {
+        $('.bookmark').removeClass('move').addClass('park');
       }
     }
     

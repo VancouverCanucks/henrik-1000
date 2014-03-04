@@ -6,6 +6,14 @@
   *zoom: 1;
 }
 
+@media (max-width: 419px) {
+
+}
+
+@media (min-width: 420px) and (max-width: 767px) {
+  
+}
+
 @media (min-width: 768px) and (max-width: 979px) {
 
 }
@@ -17,6 +25,10 @@
 @media (min-width: 1520px) {
   .bookmark.pin {
     top: 1200px;
+  }
+  
+  .bookmark.park {
+    top: 5400px;
   }
   
   .numbers {
@@ -69,22 +81,11 @@
     position: absolute;
     top: 2350px;
   }
-}
-
-@media (min-width: 768px) and (max-width: 979px) {
-
-}
-
-@media (max-width: 767px) {
-
-}
-
-@media (max-width: 480px) {
-
-}
-
-@media (max-width: 979px) {
-
+  
+  #trigger05-parkyoung {
+    position: absolute;
+    top: 5100px;
+  }
 }
 
 @media (min-width: 980px) and (max-width: 1519px) {

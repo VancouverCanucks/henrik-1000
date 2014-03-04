@@ -8,7 +8,8 @@ body {
 }
 
 #imagebank {
-  display: none;
+  z-index: -1;
+  position: absolute;
 }
 
 .preloader {
@@ -78,7 +79,11 @@ body {
 
 .bookmark.move {
   position: fixed;
-  top: 300px;
+  top: 250px;
+}
+
+.bookmark.park {
+  position: absolute;
 }
 
 .bookmark .tip {
@@ -286,6 +291,25 @@ section.light {
   display: none;
 }
 
+.quote {
+  font-size: 40px;
+  text-align: center;
+  line-height: 2;
+  padding: 100px 0;
+}
+
+.quote blockquote {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.quote span {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  font-style: italic;
+}
+
 .clear {
   clear: both;
 }
@@ -296,7 +320,7 @@ iframe {
 }
 
 #s2, #s3, #s4, #s5 {
-  height: 1500px;
+  height: 1495px;
 }
 
 #s1 .leadin {
