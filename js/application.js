@@ -39,6 +39,7 @@
       };
       $(holder).css(styles);
       this.loaded++;
+      $('.progressbar span').width(parseInt(this.loaded / this.loadData.length) * 100 + '%');
       if (this.loaded >= this.loadData.length) {
         this.initScroller();
       }
