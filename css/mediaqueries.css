@@ -16,7 +16,7 @@
 
 @media (min-width: 1520px) {
   .bookmark.pin {
-    top: 1540px;
+    top: 1200px;
   }
   
   .numbers {
@@ -67,7 +67,7 @@
   
   #trigger02-clipping {
     position: absolute;
-    top: 2550px;
+    top: 2350px;
   }
 }
 
@@ -144,11 +144,11 @@
   
   #trigger02-clipping {
     position: absolute;
-    top: 2350px;
+    top: 2150px;
   }
   
   #trigger03-xo {
     position: absolute;
-    top: 2900px;
+    top: 2800px;
   }
 }

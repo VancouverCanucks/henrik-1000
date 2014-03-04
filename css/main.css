@@ -84,9 +84,17 @@ body {
 .bookmark .tip {
   width: 162px;
   height: 192px;
-  background: url('../img/ui/bookmark.png') no-repeat;
-  background-position: bottom center;
   margin: 0 auto;
+}
+
+.bookmark .tip.young {
+  background: url('../img/ui/bookmark-young.png') no-repeat;
+  background-position: bottom center;
+}
+
+.bookmark .tip.old {
+  background: url('../img/ui/bookmark-old.png') no-repeat;
+  background-position: bottom center;
 }
 
 .bookmark-marker {
@@ -282,6 +290,11 @@ section.light {
   clear: both;
 }
 
+iframe {
+  z-index: 101;
+  position: absolute;
+}
+
 #s2, #s3, #s4, #s5 {
   height: 1500px;
 }
@@ -336,7 +349,7 @@ section.light {
 }
 
 #p02 {
-  top: 3200px;
+  top: 2900px;
   height: 525px;
   display: block;
 }
@@ -363,7 +376,7 @@ section.light {
 
 #p03 {
   right: -686px;
-  top: 3801px;
+  top: 3480px;
 }
 
 #p05 {
