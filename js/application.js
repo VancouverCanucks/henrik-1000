@@ -47,7 +47,6 @@
     
     Scroller.prototype.setWindowHeights = function() {
       $('#imagebank img').each(function(n) {
-        console.log($(this).height());
         i = $(this);
         $(i.attr('holder')).height(i.height());
       });
