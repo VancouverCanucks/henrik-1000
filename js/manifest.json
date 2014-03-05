@@ -1,11 +1,11 @@
 {
   "images": [
     {
-      "src": "img/photobgs/01-captain.jpg",
+      "src": "img/photobgs/03-captain.jpg",
       "holder": "#s12"
     },
     {
-      "src": "img/photobgs/01-draft.jpg",
+      "src": "img/photobgs/02-draft.jpg",
       "holder": "#s2"
     },
     {
@@ -13,11 +13,11 @@
       "holder": "#s1 .window"
     },
     {
-      "src": "img/photobgs/01-stanleycup.jpg",
+      "src": "img/photobgs/04-stanleycup.jpg",
       "holder": "#s13"
     },
     {
-      "src": "img/photobgs/01-congrats.jpg",
+      "src": "img/photobgs/05-congrats.jpg",
       "holder": "#s15"
     }
   ]
