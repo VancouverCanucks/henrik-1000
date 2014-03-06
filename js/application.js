@@ -101,6 +101,7 @@
     
     Scroller.prototype.initVideos = function() {
       this.youtubeEmbed('3-tXCaeH_WU', 'vid1');
+      this.youtubeEmbed('3-tXCaeH_WU', 'vid2');
       this.youtubeEmbed('Bq-aOBsr3hc', 'vid3');
     }
     
@@ -112,19 +113,35 @@
       });
     }
     
-    Scroller.prototype.toggleBookmark = function() {
-      if ($('.bookmark').hasClass('pin')) {
-        $('.bookmark').removeClass('pin').addClass('move');
+    Scroller.prototype.toggleYoungBookmark = function() {
+      if ($('.bookmark.young').hasClass('pin')) {
+        $('.bookmark.young').removeClass('pin').addClass('move');
       } else {
-        $('.bookmark').removeClass('move').addClass('pin');
+        $('.bookmark.young').removeClass('move').addClass('pin');
       }
     }
     
     Scroller.prototype.parkYoungBookmark = function() {
-      if ($('.bookmark').hasClass('park')) {
-        $('.bookmark').removeClass('park').addClass('move');
+      if ($('.bookmark.young').hasClass('park')) {
+        $('.bookmark.young').removeClass('park').addClass('move');
       } else {
-        $('.bookmark').removeClass('move').addClass('park');
+        $('.bookmark.young').removeClass('move').addClass('park');
+      }
+    }
+    
+    Scroller.prototype.toggleOldBookmark = function() {
+      if ($('.bookmark.old').hasClass('pin')) {
+        $('.bookmark.old').removeClass('pin').addClass('move');
+      } else {
+        $('.bookmark.old').removeClass('move').addClass('pin');
+      }
+    }
+    
+    Scroller.prototype.parkOldBookmark = function() {
+      if ($('.bookmark.old').hasClass('park')) {
+        $('.bookmark.old').removeClass('park').addClass('move');
+      } else {
+        $('.bookmark.old').removeClass('move').addClass('park');
       }
     }
     
@@ -152,6 +169,18 @@
       } else {
         el.animate({ right: '-686px' }, 500).delay(500).fadeOut();
       }
+    }
+    
+    Scroller.prototype.firstGoal = function() {
+      
+    }
+    
+    Scroller.prototype.markus = function() {
+      
+    }
+    
+    Scroller.prototype.cutout = function() {
+      
     }
     
     Scroller.prototype.toggleA = function() {

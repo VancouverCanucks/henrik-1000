@@ -92,12 +92,12 @@ body {
   margin: 0 auto;
 }
 
-.bookmark .tip.young {
+.bookmark.young .tip {
   background: url('../img/ui/bookmark-young.png') no-repeat;
   background-position: bottom center;
 }
 
-.bookmark .tip.old {
+.bookmark.old .tip {
   background: url('../img/ui/bookmark-old.png') no-repeat;
   background-position: bottom center;
 }

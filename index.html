@@ -42,8 +42,12 @@
         </div>
       </div>
       
-      <div class="bookmark pin">
-        <div class="tip young"></div>
+      <div class="bookmark pin young">
+        <div class="tip"></div>
+      </div>
+      
+      <div class="bookmark pin old">
+        <div class="tip"></div>
       </div>
       
       <div class="container">
@@ -55,7 +59,7 @@
             <h1 class="agency">1000 Games</h1>
             <h2 class="agency"><span>Henrik Sedin</span></h2>
             
-            <div id="trigger01-bookmark" callback="toggleBookmark" class="trigger"></div>
+            <div id="trigger01-bookmark" callback="toggleYoungBookmark" class="trigger"></div>
             <div class="leadin agenda">
               <p>scroll down to discover more</p>
               <img src="img/ui/down-arrow.png">
@@ -132,6 +136,10 @@
               <span id="y06">2006</span>
             </div>
             
+            <div id="trigger05-firstgoal" callback="firstGoal" class="trigger"></div>
+            <div id="trigger06-markus" callback="markus" class="trigger"></div>
+            <div id="trigger07-cutout" callback="cutout" class="trigger"></div>
+            
             <div class="point left" id="t5">
               <div class="o"><img src="img/ui/timeline-bip-dark.png"></div>
               <div class="leash"></div>
@@ -161,7 +169,7 @@
             
             <div class="clear"></div>
             
-            <div id="trigger05-parkyoung" callback="parkYoungBookmark" class="trigger"></div>
+            <div id="trigger08-parkyoung" callback="parkYoungBookmark" class="trigger"></div>
           </div>
         </section>
         
@@ -171,6 +179,7 @@
             <span>Markus Naslund</span>
           </div>
           <div class="video-embed" id="vid1"></div>
+          <div id="trigger09-toggleoldbookmark" callback="toggleOldBookmark" class="trigger"></div>
         </section>
         
         <section id="s6" class="dark">
