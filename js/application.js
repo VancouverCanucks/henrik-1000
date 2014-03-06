@@ -94,7 +94,7 @@
       player.src = 'http://www.youtube.com/embed/' + key + '?version=2&controls=1';
       player.className = 'vid-window';
       player.width = $(window).width();
-      player.height = $(window).width() * 0.56;
+      player.height = 986;
       player.setAttribute('frameborder', 0);
       document.getElementById(holder).appendChild(player);
     }

@@ -187,83 +187,92 @@ section.light {
   background-position: top center;
 }
 
-.timeline .point {
-  width: 49%;
+.point {
   position: relative;
 }
 
-.timeline .point.left {
+.point.left {
+  width: 49%;
   float: left;
   margin-left: 1.4%;
 }
 
-.timeline .point.right {
+.point.right {
+  width: 49%;
   float: right;
   margin-right: 1.4%;
 }
 
-.timeline .point .o {
+.point.free {
+  width: 30%;
+}
+
+.point .o {
   position: relative;
   top: 38px;
 }
 
-.timeline .point .leash {
+.point .leash {
   height: 3px;
   width: 30%;
   margin-top: 45px;
 }
 
-.dark .timeline .point .leash {
+.dark .point .leash {
   background: white;
 }
 
-.timeline .point .leash {
+.point .leash {
   background: #003c7c;
 }
 
-.timeline .content {
+.point.left .content, .point.right .content {
   width: 60%;
 }
 
-.dark .timeline .content {
+.point.free .content {
+  width: 100%;
+}
+
+.dark .point .content {
   border: 3px solid white;
 }
 
-.light .timeline .content {
+.light .point .content {
   border: 3px solid #003c7c;
 }
 
-.timeline .point.left .o {
+.point.left .o {
   float: right;
 }
 
-.timeline .point.right .o {
+.point.right .o {
   float: left;
 }
 
-.timeline .point.left .leash {
+.point.left .leash {
   float: right;
 }
 
-.timeline .point.right .leash {
+.point.right .leash {
   float: left;
 }
 
-.timeline .point.left .content {
+.point.left .content {
   float: right;
 }
 
-.timeline .point.right .content {
+.point.right .content {
   float: left;
 }
 
-.timeline .content h3 {
+.point .content h3 {
   font-size: 30px;
   margin: 0;
   padding: 10px 0 0 10px;
 }
 
-.timeline .content p {
+.point .content p {
   padding: 10px;
   margin: 0;
 }
@@ -291,11 +300,19 @@ section.light {
   display: none;
 }
 
+.quote-wrapper {
+  position: relative;
+}
+
 .quote {
   font-size: 40px;
   text-align: center;
   line-height: 2;
   padding: 100px 0;
+  background: #003c7c;
+  color: white;
+  z-index: 999;
+  position: absolute;
 }
 
 .quote blockquote {
@@ -332,6 +349,10 @@ iframe {
   margin-top: 50px;
 }
 
+#s7, #s10 {
+  height: 987px;
+}
+
 #t1 {
   top: 100px;
 }
@@ -358,6 +379,41 @@ iframe {
 
 #t7 {
   top: 800px;
+}
+
+#t8 {
+  top: 300px;
+}
+
+#t9 {
+  top: 600px;
+}
+
+#t10 {
+  position: absolute;
+  top: 8700px;
+  right: 5%;
+  z-index: 999;
+}
+
+#t11 {
+  top: 200px;
+}
+
+#t12 {
+  top: 600px;
+}
+
+#t13 {
+  top: 1000px;
+}
+
+#t14 {
+  top: 200px;
+}
+
+#t15 {
+  top: 500px;
 }
 
 #y09 {

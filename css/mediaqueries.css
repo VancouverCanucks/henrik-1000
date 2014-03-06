@@ -28,7 +28,7 @@
   }
   
   .bookmark.young.park {
-    top: 5400px;
+    top: 5340px;
   }
   
   .bookmark.old.pin {
@@ -60,6 +60,14 @@
   
   .timeline .year {
     font-size: 400px;
+  }
+  
+  .quote-wrapper {
+    height: 520px;
+  }
+  
+  .video-embed {
+    height: 986;
   }
   
   #p02 {
