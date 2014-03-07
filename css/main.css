@@ -327,11 +327,16 @@ section.light {
   font-style: italic;
 }
 
+#s11 .quote {
+  background: white;
+  color: #003c7c;
+}
+
 .awards {
   width: 100%;
   clear: both;
   position: relative;
-  top: 500px;
+  top: 200px;
 }
 
 .awards .graphic, .awards .award {
@@ -410,6 +415,14 @@ iframe {
 }
 
 #s7, #s10 {
+  height: 987px;
+}
+
+#s11 {
+  height: 1507px;
+}
+
+#s11 .timeline {
   height: 987px;
 }
 
