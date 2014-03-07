@@ -171,24 +171,24 @@
       }
     }
     
-    Scroller.prototype.firstGoal = function() {
-      
-    }
-    
-    Scroller.prototype.markus = function() {
-      
-    }
-    
-    Scroller.prototype.cutout = function() {
-      
-    }
-    
     Scroller.prototype.toggleA = function() {
       $('#p04').fadeToggle();
     }
     
     Scroller.prototype.toggleHats = function() {
       $('#p05').fadeToggle();
+    }
+    
+    Scroller.prototype.firstGoal = function() {
+      $('#p04').fadeToggle();
+    }
+    
+    Scroller.prototype.markus = function() {
+      $('#p05').fadeToggle();
+    }
+    
+    Scroller.prototype.cutout = function() {
+      $('#p06').fadeToggle();
     }
     
     return Scroller;

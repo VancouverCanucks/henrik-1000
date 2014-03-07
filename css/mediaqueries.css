@@ -89,8 +89,16 @@
   }
   
   #p04 {
-    left: 400px;
-    top: 4850px;
+    right: 3%;
+  }
+  
+  #p05 {
+    top: 4300px;
+  }
+  
+  #p06 {
+    top: 4776px;
+    right: 0;
   }
   
   #trigger02-clipping {
@@ -106,6 +114,21 @@
   #trigger09-toggleoldbookmark {
     position: absolute;
     top: 6900px;
+  }
+  
+  #trigger05-firstgoal {
+    position: absolute;
+    top: 3700px;
+  }
+  
+  #trigger06-markus {
+    position: absolute;
+    top: 4250px;
+  }
+  
+  #trigger07-cutout {
+    position: absolute;
+    top: 4650px;
   }
 }
 
