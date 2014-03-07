@@ -456,7 +456,11 @@ iframe {
   margin-top: 50px;
 }
 
-#s7, #s10 {
+#s7 {
+  height: 1100px;
+}
+
+#s10 {
   height: 987px;
 }
 
@@ -502,13 +506,6 @@ iframe {
 
 #t9 {
   top: 600px;
-}
-
-#t10 {
-  position: absolute;
-  top: 8700px;
-  right: 5%;
-  z-index: 999;
 }
 
 #t11 {
