@@ -327,6 +327,66 @@ section.light {
   font-style: italic;
 }
 
+.awards {
+  width: 100%;
+  clear: both;
+  position: relative;
+  top: 500px;
+}
+
+.awards .graphic, .awards .award {
+  float: left;
+}
+
+.awards .graphic {
+  width: 10%;
+}
+
+.awards .graphic img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.awards .award {
+  width: 20%;
+}
+
+.awards .award .name {
+  border: 1px solid #809ebe;
+  border-radius: 50%;
+  width: 276px;
+  height: 276px;
+  margin: 0 auto;
+}
+
+.awards .award .name h3 {
+  color: #809ebe;
+  font-size: 30px;
+  text-align: center;
+  padding: 85px 0;
+}
+
+.awards .award .label {
+  background: #809ebe;
+  color: #003c7c;
+  border-radius: 50%;
+  width: 276px;
+  height: 276px;
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+}
+
+.awards .award p {
+  width: 80%;
+  font-size: 20px;
+  margin: 0 auto;
+  position: relative;
+  top: 110px;
+  text-align: center;
+}
+
 .clear {
   clear: both;
 }
