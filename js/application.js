@@ -191,6 +191,18 @@
       $('#p06').fadeToggle();
     }
     
+    Scroller.prototype.allstarPic = function() {
+      $('#p07').fadeToggle();
+    }
+    
+    Scroller.prototype.andre = function() {
+      $('#p08').fadeToggle();
+    }
+    
+    Scroller.prototype.allstarCutout = function() {
+      $('#p09').fadeToggle();
+    }
+    
     return Scroller;
     
   })();

@@ -120,6 +120,21 @@
     right: 0;
   }
   
+  #p07 {
+    top: 7500px;
+    left: 5%;
+  }
+  
+  #p08 {
+    top: 7200px;
+    right: 5%;
+  }
+  
+  #p09 {
+    top: 7840px;
+    right: 0;
+  }
+  
   #trigger02-clipping {
     position: absolute;
     top: 2350px;
@@ -149,6 +164,22 @@
     position: absolute;
     top: 4650px;
   }
+  
+  #trigger10-allstarpic {
+    position: absolute;
+    top: 7450px;
+  }
+  
+  #trigger11-andre {
+    position: absolute;
+    top: 7000px;
+  }
+  
+  #trigger12-allstarcutout {
+    position: absolute;
+    top: 7450px;
+  }
+
 }
 
 @media (min-width: 980px) and (max-width: 1519px) {
