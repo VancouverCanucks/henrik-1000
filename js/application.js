@@ -178,8 +178,8 @@
       }
     }
     
-    Scroller.prototype.toggleSkateIn = function() {
-      el = $('#p03');
+    Scroller.prototype.slideToggle = function(target) {
+      el = $('#' + target);
       if (el.css('right') === '-686px') {
         el.show().animate({ right: '20px' }, 500);
       } else {
