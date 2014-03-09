@@ -47,7 +47,7 @@
       };
       $(holder).css(styles);
       this.loaded++;
-      $('.progressbar span').width(parseInt(this.loaded / this.loadData.length) * 100 + '%');
+      $('.progressbar span').width(parseInt(this.loaded / (this.bgs.length + this.props.length)) * 100 + '%');
       if (this.loaded >= (this.bgs.length + this.props.length)) {
         this.initScroller();
       }
@@ -58,6 +58,7 @@
       i.src = image;
       document.getElementById(holder).appendChild(i);
       this.loaded++;
+      $('.progressbar span').width(parseInt(this.loaded / (this.bgs.length + this.props.length)) * 100 + '%');
       if (this.loaded >= (this.bgs.length + this.props.length)) {
         this.initScroller();
       }
