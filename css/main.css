@@ -428,8 +428,9 @@ iframe {
 .congrats {
   font-size: 150px;
   text-align: center;
-  position: relative;
-  top: 500px;
+  position: absolute;
+  top: 19700px;
+  width: 100%;
 }
 
 .congrats .line1, .congrats .line2 {
