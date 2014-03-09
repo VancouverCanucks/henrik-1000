@@ -68,7 +68,8 @@
         i = $(this);
         $(i.attr('holder')).height(i.height());
       });
-      $('#imagebank').hide();
+      bank = document.getElementById('imagebank');
+      bank.parentNode.removeChild(bank);
     }
     
     Scroller.prototype.initScroller = function() {
@@ -134,7 +135,7 @@
     Scroller.prototype.scrollListener = function() {
       $('.trigger').each(function() {
         $(this).waypoint(function() {
-          window.scroller[this.getAttribute('callback')]();
+          window.scroller[this.getAttribute('callback')](this.getAttribute('target'));
         });
       });
     }
@@ -163,10 +164,6 @@
       }
     }
     
-    Scroller.prototype.toggleNewsClipping = function() {
-      $('#p01').fadeToggle();
-    }
-    
     Scroller.prototype.toggleXO = function() {
       prop = $('#p02');
       el22 = $('.xo-22');
@@ -189,36 +186,8 @@
       }
     }
     
-    Scroller.prototype.toggleA = function() {
-      $('#p04').fadeToggle();
-    }
-    
-    Scroller.prototype.toggleHats = function() {
-      $('#p05').fadeToggle();
-    }
-    
-    Scroller.prototype.firstGoal = function() {
-      $('#p04').fadeToggle();
-    }
-    
-    Scroller.prototype.markus = function() {
-      $('#p05').fadeToggle();
-    }
-    
-    Scroller.prototype.cutout = function() {
-      $('#p06').fadeToggle();
-    }
-    
-    Scroller.prototype.allstarPic = function() {
-      $('#p07').fadeToggle();
-    }
-    
-    Scroller.prototype.andre = function() {
-      $('#p08').fadeToggle();
-    }
-    
-    Scroller.prototype.allstarCutout = function() {
-      $('#p09').fadeToggle();
+    Scroller.prototype.fadeToggle = function(el) {
+      $('#' + el).fadeToggle();
     }
     
     return Scroller;
