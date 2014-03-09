@@ -28,6 +28,10 @@
     },
     {
       "src": "img/props/henrik-skater.gif",
+      "holder": "p03"
+    },
+    {
+      "src": "img/props/young-bros.gif",
       "holder": "p04"
     },
     {
@@ -57,6 +61,18 @@
     {
       "src": "img/props/swedish-leaders.gif",
       "holder": "p12"
+    },
+    {
+      "src": "img/props/twins.png",
+      "holder": "p14"
+    },
+    {
+      "src": "img/props/signing.png",
+      "holder": "p15"
+    },
+    {
+      "src": "img/props/henrik-skater-blue.gif",
+      "holder": "p16"
     }
   ]
 }

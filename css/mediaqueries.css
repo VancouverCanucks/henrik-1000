@@ -135,6 +135,43 @@
     right: 0;
   }
   
+  #p10 {
+    top: 10100px;
+    left: 5%;
+  }
+  
+  #p11 {
+    top: 9800px;
+    right: 5%;
+  }
+  
+  #p12 {
+    top: 10600px;
+    right: 0;
+  }
+  
+  #p13 {
+    top: 10600px;
+    left: 5%;
+  }
+  
+  #p14 {
+    top: 11500px;
+    left: 5%;
+    z-index: 1100;
+  }
+  
+  #p15 {
+    top: 11750px;
+    left: 0;
+    z-index: 1101;
+  }
+  
+  #p16 {
+    top: 11900px;
+    right: 0;
+  }
+  
   #trigger02-clipping {
     position: absolute;
     top: 2350px;
@@ -178,6 +215,36 @@
   #trigger12-allstarcutout {
     position: absolute;
     top: 7450px;
+  }
+  
+  #trigger13-0119 {
+    position: absolute;
+    top: 9500px;
+  }
+  
+  #trigger14-a {
+    position: absolute;
+    top: 10000px;
+  }
+  
+  #trigger15-swedes {
+    position: absolute;
+    top: 10500px;
+  }
+  
+  #trigger16-hospital {
+    position: absolute;
+    top: 11500px;
+  }
+  
+  #trigger17-sign {
+    position: absolute;
+    top: 11600px;
+  }
+  
+  #trigger18-assists {
+    position: absolute;
+    top: 11860px;
   }
 
 }
