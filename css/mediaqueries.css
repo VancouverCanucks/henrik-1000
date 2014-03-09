@@ -170,84 +170,23 @@
     left: 7%;
   }
   
-  #trigger02-clipping {
-    position: absolute;
-    top: 2350px;
+  #p18 {
+    left: 5%;
+    top: 18050px;
   }
   
-  #trigger08-parkyoung {
-    position: absolute;
-    top: 5100px;
+  #p19 {
+    right: 5%;
+    top: 17750px;
   }
   
-  #trigger09-toggleoldbookmark {
-    position: absolute;
-    top: 6900px;
+  #p20 {
+    top: 18700px;
   }
   
-  #trigger05-firstgoal {
-    position: absolute;
-    top: 3700px;
-  }
-  
-  #trigger06-markus {
-    position: absolute;
-    top: 4250px;
-  }
-  
-  #trigger07-cutout {
-    position: absolute;
-    top: 4650px;
-  }
-  
-  #trigger10-allstarpic {
-    position: absolute;
-    top: 7450px;
-  }
-  
-  #trigger11-andre {
-    position: absolute;
-    top: 7000px;
-  }
-  
-  #trigger12-allstarcutout {
-    position: absolute;
-    top: 7450px;
-  }
-  
-  #trigger13-0119 {
-    position: absolute;
-    top: 9500px;
-  }
-  
-  #trigger14-a {
-    position: absolute;
-    top: 10000px;
-  }
-  
-  #trigger15-swedes {
-    position: absolute;
-    top: 10500px;
-  }
-  
-  #trigger16-hospital {
-    position: absolute;
-    top: 11500px;
-  }
-  
-  #trigger17-sign {
-    position: absolute;
-    top: 11600px;
-  }
-  
-  #trigger18-assists {
-    position: absolute;
-    top: 11860px;
-  }
-  
-  #trigger19-c {
-    position: absolute;
-    top: 15500px;
+  #p21 {
+    top: 18500px;
+    right: 0;
   }
 
 }

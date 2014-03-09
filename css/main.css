@@ -322,7 +322,6 @@ section.light {
 
 .timeline .prop {
   position: absolute;
-  display: none;
 }
 
 .quote-wrapper {
@@ -426,6 +425,18 @@ iframe {
   position: absolute;
 }
 
+.congrats {
+  font-size: 150px;
+  text-align: center;
+  position: relative;
+  top: 500px;
+}
+
+.congrats .line1, .congrats .line2 {
+  position: relative;
+  margin: 0;
+}
+
 #s2, #s3, #s4, #s5, #s6, #s8, #s9, #s10, #s12, #s13, #s14, #s15 {
   height: 1495px;
 }
@@ -517,6 +528,18 @@ iframe {
 
 #t20 {
   top: 150px;
+}
+
+#t21 {
+  top: 250px;
+}
+
+#t22 {
+  top: 500px;
+}
+
+#t23 {
+  top: 700px;
 }
 
 #y09 {

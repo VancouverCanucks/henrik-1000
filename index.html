@@ -69,7 +69,6 @@
             <h1 class="agency">1000 Games</h1>
             <h2 class="agency"><span>Henrik Sedin</span></h2>
             
-            <div id="trigger01-bookmark" callback="toggleYoungBookmark" class="trigger"></div>
             <div class="leadin agenda">
               <p>scroll down to discover more</p>
               <img src="img/ui/down-arrow.png">
@@ -89,8 +88,6 @@
                 <p class="agenda">Drafted 3rd overall at the NHL Entry Draft</p>
               </div>
             </div>
-            
-            <div id="trigger02-clipping" callback="fadeToggle" target="p01" class="trigger"></div>
           </div>
         </section>
         
@@ -99,12 +96,14 @@
             <div class="year agencyb">
               <span id="y00">2000</span>
             </div>
-            <div class="prop" id="p01"></div>
+
+            <div class="prop" id="p01" data-2250="opacity:0;" data-2350="opacity:1;"></div>
             <div class="prop" id="p02">
               <div class="xo-33"></div>
               <div class="xo-22"></div>
             </div>
-            <div class="prop" id="p03"></div>
+            <div class="prop" id="p03" data-3000="right:-686px;" data3100="right:0;"></div>
+
             <div class="point left" id="t2">
               <div class="o"><img src="img/ui/timeline-bip-dark.png"></div>
               <div class="leash"></div>
@@ -113,12 +112,11 @@
                 <p class="agenda">Played his first game against the Philadelphia Flyers. Henrik and Daniel became the fourth pair of twins to play in the NHL</p>
               </div>
             </div>
-            <div id="trigger03-xo" callback="toggleXO" class="trigger"></div>
+
             <div class="point right" id="t3">
               <div class="o"><img src="img/ui/timeline-bip-dark.png"></div>
               <div class="leash"></div>
               <div class="content">
-                <div id="trigger04-skate" callback="slideToggle" target="p03" class="trigger"></div>
                 <h3><span class="agencyb">First NHL Assist</span> - <span class="agency">Oct.06.00</span></h3>
                 <p class="agenda">First assist in the NHL, scored against the Florida Panthers</p>
               </div>
@@ -146,13 +144,9 @@
               <span id="y06">2006</span>
             </div>
             
-            <div id="trigger05-firstgoal" callback="fadeToggle" target="p04" class="trigger"></div>
-            <div id="trigger06-markus" callback="fadeToggle" target="p05" class="trigger"></div>
-            <div id="trigger07-cutout" callback="fadeToggle" target="p06" class="trigger"></div>
-            
-            <div class="prop" id="p04"></div>
-            <div class="prop" id="p05"></div>
-            <div class="prop" id="p06"></div>
+            <div class="prop" id="p04" data-3800="opacity:0;" data-3900="opacity:1;"></div>
+            <div class="prop" id="p05" data-4000="opacity:0;" data-4100="opacity:1;"></div>
+            <div class="prop" id="p06" data-4300="opacity:0;" data-4400="opacity:1;"></div>
             
             <div class="point left" id="t5">
               <div class="o"><img src="img/ui/timeline-bip-dark.png"></div>
@@ -209,13 +203,14 @@
         <section id="s6" class="dark">
           <div class="timeline">
             
-            <div id="trigger10-allstarpic" callback="fadeToggle" target="p07" class="trigger"></div>
-            <div id="trigger11-andre" callback="fadeToggle" target="p08" class="trigger"></div>
-            <div id="trigger12-allstarcutout" callback="fadeToggle" target="p09" class="trigger"></div>
+            <div class="year agencyb">
+              <span id="y07">2007</span>
+              <span id="y08">2008</span>
+            </div>
             
-            <div class="prop" id="p07"></div>
-            <div class="prop" id="p08"></div>
-            <div class="prop" id="p09"></div>
+            <div class="prop" id="p07" data-7300="opacity:0;" data-7400="opacity:1;"></div>
+            <div class="prop" id="p08" data-7100="opacity:0;" data-7200="opacity:1;"></div>
+            <div class="prop" id="p09" data-7500="opacity:0;" data-7600="opacity:1;"></div>
             
             <div class="point left" id="t8">
               <div class="o"><img src="img/ui/timeline-bip.png"></div>
@@ -263,13 +258,13 @@
         <section id="s8" class="light">
           <div class="timeline">
             
-            <div id="trigger13-0119" callback="fadeToggle" target="p11" class="trigger"></div>
-            <div id="trigger14-a" callback="fadeToggle" target="p10" class="trigger"></div>
-            <div id="trigger15-swedes" callback="fadeToggle" target="p12" class="trigger"></div>
+            <div class="year agencyb">
+              <span id="y09">2009</span>
+            </div>
             
-            <div class="prop" id="p10"></div>
-            <div class="prop" id="p11"><span class="agencyb">01 19</span></div>
-            <div class="prop" id="p12"></div>
+            <div class="prop" id="p10" data-10000="opacity:0;" data-10100="opacity:1;"></div>
+            <div class="prop" id="p11" data-9500="opacity:0;" data-9600="opacity:1;"><span class="agencyb">01 19</span></div>
+            <div class="prop" id="p12" data-10300="opacity:0;" data-10400="opacity:1;"></div>
             <div class="prop" id="p13"></div>
             
             <div class="point left" id="t11">
@@ -309,14 +304,10 @@
             </div>
           </div>
           <div class="timeline">
-            
-            <div id="trigger16-hospital" callback="fadeToggle" target="p14" class="trigger"></div>
-            <div id="trigger17-sign" callback="fadeToggle" target="p15" class="trigger"></div>
-            <div id="trigger18-assists" callback="slideToggle" target="p16" class="trigger"></div>
-            
-            <div class="prop" id="p14"></div>
-            <div class="prop" id="p15"></div>
-            <div class="prop" id="p16"></div>
+                        
+            <div class="prop" id="p14" data-11500="opacity:0;" data-11600="opacity:1;"></div>
+            <div class="prop" id="p15" data-11600="opacity:0;" data-11700="opacity:1;"></div>
+            <div class="prop" id="p16" data-11800="right:-686px;" data11890="right:0;"></div>
             
             <div class="point right" id="t14">
               <div class="o"><img src="img/ui/timeline-bip-dark.png"></div>
@@ -414,10 +405,8 @@
 
         <section id="s12" class="window dark">
           <div class="timeline">
-            
-            <div id="trigger19-c" callback="fadeToggle" target="p17" class="trigger"></div>
-            
-            <div class="prop" id="p17"></div>
+                        
+            <div class="prop" id="p17" data-15500="opacity:0;" data-15600="opacity:1;"></div>
             
             <div class="point right" id="t19">
               <div class="o"><img src="img/ui/timeline-bip.png"></div>
@@ -446,15 +435,15 @@
         <section id="s14" class="window dark">
           <div class="timeline">
             
-            <div id="trigger20-digits" callback="fadeToggle" target="p18" class="trigger"></div>
-            <div id="trigger21-stare" callback="fadeToggle" target="p19" class="trigger"></div>
-            <div id="trigger22-corner" callback="fadeToggle" target="p20" class="trigger"></div>
-            <div id="trigger23-intense" callback="fadeToggle" target="p21" class="trigger"></div>
+            <div class="year agencyb">
+              <span id="y13">2013</span>
+              <span id="y14">2014</span>
+            </div>
             
-            <div class="prop" id="p18"></div>
-            <div class="prop" id="p19"></div>
-            <div class="prop" id="p20"></div>
-            <div class="prop" id="p21"></div>
+            <div class="prop" id="p18" data-17500="opacity:0;" data-17600="opacity:1;"></div>
+            <div class="prop" id="p19" data-17500="opacity:0;" data-17600="opacity:1;"></div>
+            <div class="prop" id="p20" data-18100="opacity:0;" data-18200="opacity:1;"></div>
+            <div class="prop" id="p21" data-18100="opacity:0;" data-18200="opacity:1;"></div>
             
             <div class="point left" id="t21">
               <div class="o"><img src="img/ui/timeline-bip.png"></div>
@@ -486,6 +475,11 @@
         </section>
         
         <section id="s15" class="window dark">
+          
+          <div class="congrats">
+            <p class="line1 agencyb" data-18700="left:-100%;" data-19200="left:0;">Congratulations</p>
+            <p class="line2 agencyb" data-18700="right:-100%;" data-19200="right:0;">Henrik Sedin</p>
+          </div>
           
         </section>
 
