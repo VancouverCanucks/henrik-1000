@@ -1,5 +1,5 @@
 {
-  "images": [
+  "bgs": [
     {
       "src": "img/photobgs/03-captain.jpg",
       "holder": "#s12"
@@ -19,6 +19,44 @@
     {
       "src": "img/photobgs/05-congrats.jpg",
       "holder": "#s15"
+    }
+  ],
+  "props": [
+    {
+      "src": "img/props/newspaper-clipping.gif",
+      "holder": "p01"
+    },
+    {
+      "src": "img/props/henrik-skater.gif",
+      "holder": "p04"
+    },
+    {
+      "src": "img/props/markus.gif",
+      "holder": "p05"
+    },
+    {
+      "src": "img/props/cutout.gif",
+      "holder": "p06"
+    },
+    {
+      "src": "img/props/allstar.png",
+      "holder": "p07"
+    },
+    {
+      "src": "img/props/andre.png",
+      "holder": "p08"
+    },
+    {
+      "src": "img/props/allstar-silhouette.png",
+      "holder": "p09"
+    },
+    {
+      "src": "img/props/a.gif",
+      "holder": "p10"
+    },
+    {
+      "src": "img/props/swedish-leaders.gif",
+      "holder": "p12"
     }
   ]
 }

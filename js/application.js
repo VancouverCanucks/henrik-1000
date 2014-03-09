@@ -17,20 +17,28 @@
           url: 'js/manifest.json',
           dataType: 'json'
         }).done(function(json) {
-          window.scroller.loadData = json.images;
+          window.scroller.bgs = json.bgs;
+          window.scroller.props = json.props;
           bank = document.getElementById('imagebank');
-          for (a in window.scroller.loadData) {
+          for (a in window.scroller.bgs) {
             i = document.createElement('img');
-            i.src = window.scroller.loadData[a].src;
-            i.setAttribute('holder', window.scroller.loadData[a].holder);
-            i.setAttribute('onload', 'javascript:window.scroller.preloadProgress(\'' + window.scroller.loadData[a].src + '\', \'' + window.scroller.loadData[a].holder + '\');');
+            i.src = window.scroller.bgs[a].src;
+            i.setAttribute('holder', window.scroller.bgs[a].holder);
+            i.setAttribute('onload', 'javascript:window.scroller.preloadBGProgress(\'' + window.scroller.bgs[a].src + '\', \'' + window.scroller.bgs[a].holder + '\');');
+            bank.appendChild(i);
+          }
+          for (a in window.scroller.props) {
+            i = document.createElement('img');
+            i.src = window.scroller.props[a].src;
+            i.setAttribute('holder', window.scroller.props[a].holder);
+            i.setAttribute('onload', 'javascript:window.scroller.preloadPropProgress(\'' + window.scroller.props[a].src + '\', \'' + window.scroller.props[a].holder + '\');');
             bank.appendChild(i);
           }
         });
       } else { this.initScroller(); }
     }
     
-    Scroller.prototype.preloadProgress = function(image, holder) {
+    Scroller.prototype.preloadBGProgress = function(image, holder) {
       styles = {
         'background-image': 'url(' + image + ')',
         'background-repeat': 'no-repeat',
@@ -40,7 +48,17 @@
       $(holder).css(styles);
       this.loaded++;
       $('.progressbar span').width(parseInt(this.loaded / this.loadData.length) * 100 + '%');
-      if (this.loaded >= this.loadData.length) {
+      if (this.loaded >= (this.bgs.length + this.props.length)) {
+        this.initScroller();
+      }
+    }
+    
+    Scroller.prototype.preloadPropProgress = function(image, holder) {
+      i = document.createElement('img');
+      i.src = image;
+      document.getElementById(holder).appendChild(i);
+      this.loaded++;
+      if (this.loaded >= (this.bgs.length + this.props.length)) {
         this.initScroller();
       }
     }
