@@ -9,7 +9,8 @@
         <title>Henrik Sedin's 1000th Game</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/vendor/normalize.min.css">
+        <link rel="stylesheet" href="css/vendor/progressjs.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/mediaqueries.css">
         
@@ -24,6 +25,7 @@
 
         <!--[if lt IE 9]>
             <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+            <script src="js/vendor/skrollr.ie.js"></script>
         <![endif]-->
     </head>
     <body class="scroller">
@@ -34,10 +36,7 @@
         <div class="bg"></div>
         <div class="content-wrap">
           
-          <div class="content agencyb">
-            <p>Loading Henrik's Greatness</p>
-            <div class="progressbar"><span style="width: 0%;"></span></div>
-          </div>
+          <div class="content agencyb"><p>Loading Henrik's Greatness</p></div>
           
         </div>
       </div>
@@ -53,15 +52,15 @@
         </div>
       </div>
       
-      <div class="bookmark pin young">
-        <div class="tip"></div>
-      </div>
-      
-      <div class="bookmark pin old">
-        <div class="tip"></div>
-      </div>
-      
       <div class="container">
+        
+        <div class="bookmark pin young" data-750="top:950px;" data-5050="top:5050px;">
+          <div class="tip"></div>
+        </div>
+      
+        <div class="bookmark pin old" data-7150="top:6950px;" data-18700="top:18700px;">
+          <div class="tip"></div>
+        </div>
         
         <section id="s1" class="dark">
           <div class="window"></div>
@@ -415,6 +414,11 @@
 
         <section id="s12" class="window dark">
           <div class="timeline">
+            
+            <div id="trigger19-c" callback="fadeToggle" target="p17" class="trigger"></div>
+            
+            <div class="prop" id="p17"></div>
+            
             <div class="point right" id="t19">
               <div class="o"><img src="img/ui/timeline-bip.png"></div>
               <div class="leash"></div>
@@ -441,6 +445,17 @@
         
         <section id="s14" class="window dark">
           <div class="timeline">
+            
+            <div id="trigger20-digits" callback="fadeToggle" target="p18" class="trigger"></div>
+            <div id="trigger21-stare" callback="fadeToggle" target="p19" class="trigger"></div>
+            <div id="trigger22-corner" callback="fadeToggle" target="p20" class="trigger"></div>
+            <div id="trigger23-intense" callback="fadeToggle" target="p21" class="trigger"></div>
+            
+            <div class="prop" id="p18"></div>
+            <div class="prop" id="p19"></div>
+            <div class="prop" id="p20"></div>
+            <div class="prop" id="p21"></div>
+            
             <div class="point left" id="t21">
               <div class="o"><img src="img/ui/timeline-bip.png"></div>
               <div class="leash"></div>
@@ -489,7 +504,8 @@
       
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-      <script src="js/vendor/waypoints.min.js"></script>
+      <script src="js/vendor/skrollr.js"></script>
+      <script src="js/vendor/progress.min.js"></script>
       <script src="js/application.js"></script>
     </body>
 </html>

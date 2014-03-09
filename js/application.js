@@ -8,11 +8,16 @@
       window.scroller = this;
       this.loadData = 0;
       this.loaded = 0;
+      this.progressbar = progressJs();
+      this.skrollr = skrollr.init({
+        smoothScrolling: true
+      });
       this.preload();
     }
     
     Scroller.prototype.preload = function() {
       if (!this.checkForCrapBrowser()) {
+        this.progressbar.start();
         $.ajax({
           url: 'js/manifest.json',
           dataType: 'json'
@@ -46,8 +51,9 @@
         'background-position': 'top center'
       };
       $(holder).css(styles);
+      this.skrollr.refresh($(holder));
       this.loaded++;
-      $('.progressbar span').width(parseInt(this.loaded / (this.bgs.length + this.props.length)) * 100 + '%');
+      this.progressbar.set(parseInt(this.loaded / (this.bgs.length + this.props.length)) * 100);
       if (this.loaded >= (this.bgs.length + this.props.length)) {
         this.initScroller();
       }
@@ -57,8 +63,9 @@
       i = document.createElement('img');
       i.src = image;
       document.getElementById(holder).appendChild(i);
+      this.skrollr.refresh($('#' + holder));
       this.loaded++;
-      $('.progressbar span').width(parseInt(this.loaded / (this.bgs.length + this.props.length)) * 100 + '%');
+      this.progressbar.set(parseInt(this.loaded / (this.bgs.length + this.props.length)) * 100);
       if (this.loaded >= (this.bgs.length + this.props.length)) {
         this.initScroller();
       }
@@ -74,6 +81,7 @@
     }
     
     Scroller.prototype.initScroller = function() {
+      this.progressbar.end();
       this.setWindowHeights();
       
       $('.preloader').fadeOut();
@@ -81,23 +89,17 @@
       $('.bookmark').fadeIn();
       
       this.initUI();
-      this.scrollListener();
     }
     
     Scroller.prototype.initUI = function() {
       $('.window').each(function(i) {
         $(this).height();
       });
-      
-      this.fit();
-      
+            
       $(window).on('resize', function() {
-        window.scroller.fit();
+        
       });
-    }
-    
-    Scroller.prototype.fit = function() {
-      $('.vid-window').width($(window).width()).height($(window).width() * 0.56);
+      
     }
     
     Scroller.prototype.checkForCrapBrowser = function() {
@@ -131,14 +133,6 @@
       $('.modal h2').html('');
       $('#modal-content').html('');
       $('.modal').fadeOut();
-    }
-    
-    Scroller.prototype.scrollListener = function() {
-      $('.trigger').each(function() {
-        $(this).waypoint(function() {
-          window.scroller[this.getAttribute('callback')](this.getAttribute('target'));
-        });
-      });
     }
     
     Scroller.prototype.toggleYoungBookmark = function() {

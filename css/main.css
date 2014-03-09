@@ -112,19 +112,8 @@ body {
   width: 100%;
   height: 192px;
   z-index: 100;
-}
-
-.bookmark.pin {
   position: absolute;
-}
-
-.bookmark.move {
-  position: fixed;
-  top: 250px;
-}
-
-.bookmark.park {
-  position: absolute;
+  padding-top: 250px;
 }
 
 .bookmark .tip {
@@ -141,11 +130,6 @@ body {
 .bookmark.old .tip {
   background: url('../img/ui/bookmark-old.png') no-repeat;
   background-position: bottom center;
-}
-
-.bookmark-marker {
-  width: 100%;
-  height: 1px;
 }
 
 .container {
@@ -525,6 +509,14 @@ iframe {
 
 #t15 {
   top: 500px;
+}
+
+#t19 {
+  top: 150px;
+}
+
+#t20 {
+  top: 150px;
 }
 
 #y09 {

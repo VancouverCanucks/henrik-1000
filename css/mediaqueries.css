@@ -23,21 +23,6 @@
 }
 
 @media (min-width: 1520px) {
-  .bookmark.young.pin {
-    top: 1200px;
-  }
-  
-  .bookmark.young.park {
-    top: 5340px;
-  }
-  
-  .bookmark.old.pin {
-    top: 7050px;
-  }
-  
-  .bookmark.old.park {
-    top: 5400px;
-  }
   
   .numbers {
     font-size: 500px;
@@ -172,6 +157,19 @@
     right: 0;
   }
   
+  #p17 {
+    top: 15900px;
+    width: 100%;
+  }
+  
+  #p17 img {
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    top: 15px;
+    left: 7%;
+  }
+  
   #trigger02-clipping {
     position: absolute;
     top: 2350px;
@@ -246,13 +244,15 @@
     position: absolute;
     top: 11860px;
   }
+  
+  #trigger19-c {
+    position: absolute;
+    top: 15500px;
+  }
 
 }
 
 @media (min-width: 980px) and (max-width: 1519px) {
-  .bookmark.young .pin {
-    top: 1280px;
-  }
   
   .numbers {
     font-size: 300px;

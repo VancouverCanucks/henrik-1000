@@ -73,6 +73,26 @@
     {
       "src": "img/props/henrik-skater-blue.gif",
       "holder": "p16"
+    },
+    {
+      "src": "img/props/c.jpg",
+      "holder": "p17"
+    },
+    {
+      "src": "img/props/points.png",
+      "holder": "p18"
+    },
+    {
+      "src": "img/props/the-stare.png",
+      "holder": "p19"
+    },
+    {
+      "src": "img/props/sedin-corner.png",
+      "holder": "p20"
+    },
+    {
+      "src": "img/props/intense.png",
+      "holder": "p21"
     }
   ]
 }
