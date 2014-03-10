@@ -431,15 +431,12 @@ iframe {
   position: absolute;
   top: 19700px;
   width: 100%;
+  overflow: hidden;
 }
 
 .congrats .line1, .congrats .line2 {
-  position: relative;
+  position: absolute;
   margin: 0;
-}
-
-#s2, #s3, #s4, #s5, #s6, #s8, #s9, #s10, #s12, #s13, #s14, #s15 {
-  height: 1495px;
 }
 
 #s1 .leadin {

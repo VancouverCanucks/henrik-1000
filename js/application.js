@@ -9,9 +9,7 @@
       this.loadData = 0;
       this.loaded = 0;
       this.progressbar = progressJs();
-      this.skrollr = skrollr.init({
-        smoothScrolling: true
-      });
+      this.skrollr = null;
       this.preload();
     }
     
@@ -22,9 +20,13 @@
           url: 'js/manifest.json',
           dataType: 'json'
         }).done(function(json) {
+          
           window.scroller.bgs = json.bgs;
           window.scroller.props = json.props;
+          window.scroller.triggers = json.triggers;
+          
           bank = document.getElementById('imagebank');
+          
           for (a in window.scroller.bgs) {
             i = document.createElement('img');
             i.src = window.scroller.bgs[a].src;
@@ -32,6 +34,7 @@
             i.setAttribute('onload', 'javascript:window.scroller.preloadBGProgress(\'' + window.scroller.bgs[a].src + '\', \'' + window.scroller.bgs[a].holder + '\');');
             bank.appendChild(i);
           }
+          
           for (a in window.scroller.props) {
             i = document.createElement('img');
             i.src = window.scroller.props[a].src;
@@ -39,8 +42,32 @@
             i.setAttribute('onload', 'javascript:window.scroller.preloadPropProgress(\'' + window.scroller.props[a].src + '\', \'' + window.scroller.props[a].holder + '\');');
             bank.appendChild(i);
           }
+          
+          if ($(window).width() >= 1520) {
+            triggerset = 1520;
+          } else if ($(window).width() >= 980 && $(window).width() < 1520) {
+            triggerset = 980;
+          } else if ($(window).width() >= 768 && $(window).width() < 980) {
+            triggerset = 768;
+          } else if ($(window).width() >= 420 && $(window).width() < 768) {
+            triggerset = 420;
+          } else if ($(window).width() >= 0 && $(window).width() < 420) {
+            triggerset = 0;
+          } else {
+            triggerset = 1520;
+          }
+
+          for (a in window.scroller.triggers[triggerset]) {
+            item = window.scroller.triggers[triggerset][a];
+            for (t in item.params) {
+              $(item.target).attr(t, item.params[t]);
+            }
+          }
+          
         });
-      } else { this.initScroller(); }
+      } else {
+        this.initScroller();
+      }
     }
     
     Scroller.prototype.preloadBGProgress = function(image, holder) {
@@ -51,7 +78,6 @@
         'background-position': 'top center'
       };
       $(holder).css(styles);
-      this.skrollr.refresh($(holder));
       this.loaded++;
       this.progressbar.set(parseInt(this.loaded / (this.bgs.length + this.props.length)) * 100);
       if (this.loaded >= (this.bgs.length + this.props.length)) {
@@ -63,7 +89,6 @@
       i = document.createElement('img');
       i.src = image;
       document.getElementById(holder).appendChild(i);
-      this.skrollr.refresh($('#' + holder));
       this.loaded++;
       this.progressbar.set(parseInt(this.loaded / (this.bgs.length + this.props.length)) * 100);
       if (this.loaded >= (this.bgs.length + this.props.length)) {
@@ -72,10 +97,11 @@
     }
     
     Scroller.prototype.setWindowHeights = function() {
+      /*
       $('#imagebank img').each(function(n) {
         i = $(this);
         $(i.attr('holder')).height(i.height());
-      });
+      });*/
       bank = document.getElementById('imagebank');
       bank.parentNode.removeChild(bank);
     }
@@ -95,11 +121,12 @@
       $('.window').each(function(i) {
         $(this).height();
       });
-            
+      
       $(window).on('resize', function() {
         
       });
       
+      this.skrollr = skrollr.init();
     }
     
     Scroller.prototype.checkForCrapBrowser = function() {
@@ -133,30 +160,6 @@
       $('.modal h2').html('');
       $('#modal-content').html('');
       $('.modal').fadeOut();
-    }
-    
-    Scroller.prototype.toggleYoungBookmark = function() {
-      if ($('.bookmark.young').hasClass('pin')) {
-        $('.bookmark.young').removeClass('pin').addClass('move');
-      } else {
-        $('.bookmark.young').removeClass('move').addClass('pin');
-      }
-    }
-    
-    Scroller.prototype.parkYoungBookmark = function() {
-      if ($('.bookmark.young').hasClass('park')) {
-        $('.bookmark.young').removeClass('park').addClass('move');
-      } else {
-        $('.bookmark.young').removeClass('move').addClass('park');
-      }
-    }
-    
-    Scroller.prototype.toggleOldBookmark = function() {
-      if ($('.bookmark.old').hasClass('pin')) {
-        $('.bookmark.old').removeClass('pin').addClass('move');
-      } else {
-        $('.bookmark.old').removeClass('move').addClass('pin');
-      }
     }
     
     Scroller.prototype.toggleXO = function() {
