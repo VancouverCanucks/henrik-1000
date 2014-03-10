@@ -219,13 +219,6 @@
     width: 100%;
     text-align: center;
     overflow: hidden;
-    background: #bcbec0;
-  }
-  
-  .video-container {
-    width: 2500px;
-    height: 1406px;
-    margin: 0 auto;
   }
   
   video {

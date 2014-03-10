@@ -110,7 +110,7 @@
           "params":
           {
             "data-7150": "top:6950px;",
-            "data-18700": "top:18700px;"
+            "data-19860": "top:19860px;"
           }
         },
         {
@@ -271,6 +271,22 @@
           {
             "data-19300": "opacity:0;",
             "data-19400": "opacity:1;"
+          }
+        },
+        {
+          "target": ".award .name",
+          "params":
+          {
+            "data-14200": "-webkit-transform: rotateX(0deg);-moz-transform: rotateX(0deg);transform: rotateX(0deg);",
+            "data-14300": "-webkit-transform: rotateX(180deg);-moz-transform: rotateX(180deg);transform: rotateX(180deg);"
+          }
+        },
+        {
+          "target": ".award .label",
+          "params":
+          {
+            "data-14200": "-webkit-transform: rotateX(180deg);-moz-transform: rotateX(180deg);transform: rotateX(180deg);",
+            "data-14300": "-webkit-transform: rotateX(0deg);-moz-transform: rotateX(0deg);transform: rotateX(0deg);"
           }
         },
         {
@@ -457,6 +473,14 @@
           {
             "data-18100": "opacity:0;",
             "data-18200": "opacity:1;"
+          }
+        },
+        {
+          "target": ".award",
+          "params":
+          {
+            "data-14200": "-webkit-transform: rotateX(0deg);-moz-transform: rotateX(0deg);transform: rotateX(0deg);",
+            "data-14300": "-webkit-transform: rotateX(180deg);-moz-transform: rotateX(180deg);transform: rotateX(180deg);"
           }
         },
         {

@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+.agenda, .agendab, .agency, .agencyb {
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background: #003c7c;
 }
@@ -357,10 +362,11 @@ section.light {
 }
 
 .awards {
-  width: 100%;
+  width: 1520px;
   clear: both;
   position: relative;
   top: 200px;
+  margin: 0 auto;
 }
 
 .awards .graphic, .awards .award {
@@ -378,15 +384,30 @@ section.light {
 }
 
 .awards .award {
-  width: 20%;
+  width: 278px;
+  height: 278px;
+  position:relative;
+  padding: 0 13px;
 }
 
 .awards .award .name {
+  position: absolute;
   border: 1px solid #809ebe;
   border-radius: 50%;
   width: 276px;
   height: 276px;
   margin: 0 auto;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .awards .award .name h3 {
@@ -397,14 +418,24 @@ section.light {
 }
 
 .awards .award .label {
+  position: absolute;
   background: #809ebe;
   color: #003c7c;
   border-radius: 50%;
   width: 276px;
   height: 276px;
-  position: relative;
-  top: 20px;
   margin: 0 auto;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-179deg);
+  transform: rotateY(-179deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .awards .award p {
