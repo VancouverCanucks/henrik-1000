@@ -429,13 +429,13 @@ iframe {
   font-size: 150px;
   text-align: center;
   position: absolute;
-  top: 19700px;
+  top: 21000px;
   width: 100%;
   overflow: hidden;
 }
 
 .congrats .line1, .congrats .line2 {
-  position: absolute;
+  position: relative;
   margin: 0;
 }
 
@@ -498,6 +498,10 @@ iframe {
 
 #t9 {
   top: 600px;
+}
+
+#t10 {
+  top: 100px;
 }
 
 #t11 {

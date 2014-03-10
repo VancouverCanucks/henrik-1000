@@ -43,26 +43,7 @@
             bank.appendChild(i);
           }
           
-          if ($(window).width() >= 1520) {
-            triggerset = 1520;
-          } else if ($(window).width() >= 980 && $(window).width() < 1520) {
-            triggerset = 980;
-          } else if ($(window).width() >= 768 && $(window).width() < 980) {
-            triggerset = 768;
-          } else if ($(window).width() >= 420 && $(window).width() < 768) {
-            triggerset = 420;
-          } else if ($(window).width() >= 0 && $(window).width() < 420) {
-            triggerset = 0;
-          } else {
-            triggerset = 1520;
-          }
-
-          for (a in window.scroller.triggers[triggerset]) {
-            item = window.scroller.triggers[triggerset][a];
-            for (t in item.params) {
-              $(item.target).attr(t, item.params[t]);
-            }
-          }
+          window.scroller.addSkrollrMatter();
           
         });
       } else {
@@ -97,11 +78,6 @@
     }
     
     Scroller.prototype.setWindowHeights = function() {
-      /*
-      $('#imagebank img').each(function(n) {
-        i = $(this);
-        $(i.attr('holder')).height(i.height());
-      });*/
       bank = document.getElementById('imagebank');
       bank.parentNode.removeChild(bank);
     }
@@ -117,13 +93,53 @@
       this.initUI();
     }
     
+    Scroller.prototype.addSkrollrMatter = function() {
+      
+      if ($(window).width() >= 1520) {
+        triggerset = 1520;
+      } else if ($(window).width() >= 980 && $(window).width() < 1520) {
+        triggerset = 980;
+      } else if ($(window).width() >= 768 && $(window).width() < 980) {
+        triggerset = 768;
+      } else if ($(window).width() >= 420 && $(window).width() < 768) {
+        triggerset = 420;
+      } else if ($(window).width() >= 0 && $(window).width() < 420) {
+        triggerset = 0;
+      } else {
+        triggerset = 1520;
+      }
+
+      for (a in this.triggers[triggerset]) {
+        item = this.triggers[triggerset][a];
+        target = $(item.target);
+        
+        if (target.attr('frontmatter')) {
+          oldFM = target.attr('frontmatter').split('|');
+        
+          for (fm in oldFM) {
+            console.log(oldFM[fm]);
+            target.removeAttr(oldFM[fm]);
+          }
+        }
+        
+        frontmatter = '';
+        for (t in item.params) {
+          target.attr(t, item.params[t]);
+          frontmatter += '|' + t;
+        }
+        target.attr('frontmatter', frontmatter);
+      }
+      
+      if (this.skrollr !== null) { this.skrollr.refresh(); }
+    }
+    
     Scroller.prototype.initUI = function() {
       $('.window').each(function(i) {
         $(this).height();
       });
       
       $(window).on('resize', function() {
-        
+        window.scroller.addSkrollrMatter();
       });
       
       this.skrollr = skrollr.init();

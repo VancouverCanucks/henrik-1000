@@ -102,7 +102,7 @@
           "params":
           {
             "data-750": "top:950px;",
-            "data-5050": "top:5050px;"
+            "data-5300": "top:5300px;"
           }
         },
         {
@@ -213,72 +213,80 @@
           "target": "#p14",
           "params":
           {
-            "data-11600": "opacity:0;",
-            "data-10400": "opacity:1;"
+            "data-11500": "opacity:0;",
+            "data-11600": "opacity:1;"
           }
         },
         {
           "target": "#p15",
           "params":
           {
-            "data-11800": "right:-686px;",
-            "data-11890": "right:0;"
+            "data-11600": "opacity:0;",
+            "data-11700": "opacity:1;"
+          }
+        },
+        {
+          "target": "#p16",
+          "params":
+          {
+            "data-11900": "right:-686px;",
+            "data-12000": "right:0;"
           }
         },
         {
           "target": "#p17",
           "params":
           {
-            "data-15500": "opacity:0;",
-            "data-15600": "opacity:1;"
+            "data-16100": "opacity:0;",
+            "data-16200": "opacity:1;"
           }
         },
         {
           "target": "#p18",
           "params":
           {
-            "data-17500": "opacity:0;",
-            "data-17600": "opacity:1;"
+            "data-18500": "opacity:0;",
+            "data-18600": "opacity:1;"
           }
         },
         {
           "target": "#p19",
           "params":
           {
-            "data-17500": "opacity:0;",
-            "data-17600": "opacity:1;"
+            "data-18500": "opacity:0;",
+            "data-18600": "opacity:1;"
           }
         },
         {
           "target": "#p20",
           "params":
           {
-            "data-18100": "opacity:0;",
-            "data-18200": "opacity:1;"
+            "data-19300": "opacity:0;",
+            "data-19400": "opacity:1;"
           }
         },
         {
           "target": "#p21",
           "params":
           {
-            "data-18100": "opacity:0;",
-            "data-18200": "opacity:1;"
+            "data-19300": "opacity:0;",
+            "data-19400": "opacity:1;"
           }
         },
         {
           "target": ".line1",
           "params":
           {
-            "data-18700": "left:-100%;",
-            "data-19000": "left:0;"
+            "data-20000": "left:-100%;",
+            "data-20400": "left:0;"
           }
         },
         {
           "target": ".line2",
           "params":
           {
-            "data-18700": "right:-100%;",
-            "data-19000": "right:0;"
+            "data-20000": "right:-100%;",
+            "data-20400": "right:0;"
           }
         }
       ],
@@ -295,8 +303,8 @@
           "target": ".bookmark.old",
           "params":
           {
-            "data-7150": "top:6950px;",
-            "data-18700": "top:18700px;"
+            "data-5680": "top:5680px;",
+            "data-16475": "top:16475px;"
           }
         },
         {
@@ -455,16 +463,16 @@
           "target": ".line1",
           "params":
           {
-            "data-18700": "left:-100%;",
-            "data-19000": "left:0;"
+            "data-21000": "left:-100%;",
+            "data-23000": "left:0;"
           }
         },
         {
           "target": ".line2",
           "params":
           {
-            "data-18700": "right:-100%;",
-            "data-19000": "right:0;"
+            "data-21000": "right:-100%;",
+            "data-23000": "right:0;"
           }
         }
       ],
