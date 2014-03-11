@@ -218,13 +218,13 @@ section.light {
 }
 
 .point.left {
-  width: 49.35%;
+  width: 49.325%;
   float: left;
   margin-left: 1.4%;
 }
 
 .point.right {
-  width: 49.325%;
+  width: 49.35%;
   float: right;
   margin-right: 1.4%;
 }
@@ -475,7 +475,7 @@ iframe {
 }
 
 #s6 {
-  position: absolute;
+  position: relative;
 }
 
 #s7 {
@@ -549,6 +549,7 @@ iframe {
 .video-embed {
   background: #bcbec0;
   height: 1100px;
+  overflow: hidden;
 }
 
 .video-container a {
