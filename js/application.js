@@ -178,19 +178,6 @@
       $('.modal').fadeOut();
     }
     
-    Scroller.prototype.toggleXO = function() {
-      prop = $('#p02');
-      el22 = $('.xo-22');
-      el33 = $('.xo-33');
-      if (el22.css('height') == '0px' || el22.css('height') == '0') {
-        el22.show().animate( { height: prop.height() }, 400);
-        el33.show().delay(400).animate( { height: prop.height() }, 400);
-      } else {
-        el22.fadeOut(200).delay(200).css('height', 0);
-        el33.fadeOut(200).delay(200).css('height', 0);
-      }
-    }
-    
     return Scroller;
     
   })();

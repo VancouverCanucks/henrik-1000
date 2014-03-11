@@ -23,76 +23,48 @@
   ],
   "props": [
     {
-      "src": "img/props/newspaper-clipping.gif",
+      "src": "img/props/04-clipping.png",
       "holder": "p01"
     },
     {
-      "src": "img/props/henrik-skater.gif",
-      "holder": "p03"
+      "src": "img/props/04-bearded.gif",
+      "holder": "p02"
     },
     {
-      "src": "img/props/young-bros.gif",
+      "src": "img/props/04-chalk-33.gif",
+      "holder": "xo-33"
+    },
+    {
+      "src": "img/props/04-chalk-22.gif",
+      "holder": "xo-22"
+    },
+    {
+      "src": "img/props/04-action.gif",
       "holder": "p04"
     },
     {
-      "src": "img/props/markus.gif",
+      "src": "img/props/04-headshot.gif",
       "holder": "p05"
     },
     {
-      "src": "img/props/cutout.gif",
+      "src": "img/props/04-skating.gif",
       "holder": "p06"
     },
     {
-      "src": "img/props/allstar.png",
+      "src": "img/props/05-brothers.gif",
       "holder": "p07"
     },
     {
-      "src": "img/props/andre.png",
+      "src": "img/props/05-swedes.gif",
       "holder": "p08"
     },
     {
-      "src": "img/props/allstar-silhouette.png",
+      "src": "img/props/05-skating.gif",
       "holder": "p09"
     },
     {
-      "src": "img/props/a.gif",
+      "src": "img/props/05-cutout.gif",
       "holder": "p10"
-    },
-    {
-      "src": "img/props/swedish-leaders.gif",
-      "holder": "p12"
-    },
-    {
-      "src": "img/props/twins.png",
-      "holder": "p14"
-    },
-    {
-      "src": "img/props/signing.png",
-      "holder": "p15"
-    },
-    {
-      "src": "img/props/henrik-skater-blue.gif",
-      "holder": "p16"
-    },
-    {
-      "src": "img/props/c.jpg",
-      "holder": "p17"
-    },
-    {
-      "src": "img/props/points.png",
-      "holder": "p18"
-    },
-    {
-      "src": "img/props/the-stare.png",
-      "holder": "p19"
-    },
-    {
-      "src": "img/props/sedin-corner.png",
-      "holder": "p20"
-    },
-    {
-      "src": "img/props/intense.png",
-      "holder": "p21"
     }
   ],
   "triggers": {
@@ -109,7 +81,7 @@
           "target": ".bookmark.old",
           "params":
           {
-            "data-7150": "top:6950px;",
+            "data-7120": "top:7120px;",
             "data-19860": "top:19860px;"
           }
         },
