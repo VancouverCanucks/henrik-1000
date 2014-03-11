@@ -626,3 +626,8 @@ iframe {
   color: #003c7c;
   font-size: 150px;
 }
+
+.video-embed {
+  background: #bcbec0;
+  height: 1100px;
+}
