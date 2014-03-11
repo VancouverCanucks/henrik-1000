@@ -147,16 +147,16 @@
           "target": ".line1",
           "params":
           {
-            "data-21000": "left:-100%;",
-            "data-23000": "left:0;"
+            "data-1000": "left:-100%;",
+            "data-1000": "left:0;"
           }
         },
         {
           "target": ".line2",
           "params":
           {
-            "data-21000": "right:-100%;",
-            "data-23000": "right:0;"
+            "data-1000": "right:-100%;",
+            "data-1000": "right:0;"
           }
         }
       ],

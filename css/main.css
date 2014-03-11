@@ -219,7 +219,7 @@ section.light {
 }
 
 .point.free {
-  width: 30%;
+  display: none;
 }
 
 .point .o {
@@ -355,19 +355,13 @@ section.light {
 }
 
 .awards {
-  width: 1520px;
   clear: both;
   position: relative;
-  top: 200px;
   margin: 0 auto;
 }
 
 .awards .graphic, .awards .award {
   float: left;
-}
-
-.awards .graphic {
-  width: 10%;
 }
 
 .awards .graphic img {
@@ -377,18 +371,13 @@ section.light {
 }
 
 .awards .award {
-  width: 278px;
-  height: 278px;
   position:relative;
-  padding: 0 13px;
 }
 
 .awards .award .name {
   position: absolute;
   border: 1px solid #809ebe;
   border-radius: 50%;
-  width: 276px;
-  height: 276px;
   margin: 0 auto;
   -webkit-transform: rotateX(0deg) rotateY(0deg);
   -moz-transform: rotateX(0deg) rotateY(0deg);
@@ -405,9 +394,7 @@ section.light {
 
 .awards .award .name h3 {
   color: #809ebe;
-  font-size: 30px;
   text-align: center;
-  padding: 85px 0;
 }
 
 .awards .award .label {
@@ -415,8 +402,6 @@ section.light {
   background: #809ebe;
   color: #003c7c;
   border-radius: 50%;
-  width: 276px;
-  height: 276px;
   margin: 0 auto;
   -webkit-transform: rotateY(-180deg);
   -moz-transform: rotateY(-179deg);
@@ -432,11 +417,8 @@ section.light {
 }
 
 .awards .award p {
-  width: 80%;
-  font-size: 20px;
   margin: 0 auto;
   position: relative;
-  top: 110px;
   text-align: center;
 }
 
@@ -481,14 +463,6 @@ iframe {
 }
 
 #s10 {
-  height: 987px;
-}
-
-#s11 {
-  height: 1507px;
-}
-
-#s11 .timeline {
   height: 987px;
 }
 
