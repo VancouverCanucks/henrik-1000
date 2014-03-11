@@ -222,13 +222,13 @@ section.light {
 }
 
 .point.left {
-  width: 49%;
+  width: 49.35%;
   float: left;
   margin-left: 1.4%;
 }
 
 .point.right {
-  width: 49%;
+  width: 49.325%;
   float: right;
   margin-right: 1.4%;
 }
@@ -334,7 +334,6 @@ section.light {
 }
 
 .quote {
-  font-size: 40px;
   text-align: center;
   line-height: 2;
   padding: 100px 0;
@@ -493,86 +492,6 @@ iframe {
 
 #s11 .timeline {
   height: 987px;
-}
-
-#t1 {
-  top: 100px;
-}
-
-#t2 {
-  top: 100px;
-}
-
-#t3 {
-  top: 500px;
-}
-
-#t4 {
-  top: 800px;
-}
-
-#t5 {
-  top: 100px;
-}
-
-#t6 {
-  top: 500px;
-}
-
-#t7 {
-  top: 800px;
-}
-
-#t8 {
-  top: 300px;
-}
-
-#t9 {
-  top: 600px;
-}
-
-#t10 {
-  top: 100px;
-}
-
-#t11 {
-  top: 200px;
-}
-
-#t12 {
-  top: 600px;
-}
-
-#t13 {
-  top: 1000px;
-}
-
-#t14 {
-  top: 200px;
-}
-
-#t15 {
-  top: 500px;
-}
-
-#t19 {
-  top: 150px;
-}
-
-#t20 {
-  top: 150px;
-}
-
-#t21 {
-  top: 250px;
-}
-
-#t22 {
-  top: 500px;
-}
-
-#t23 {
-  top: 700px;
 }
 
 #y09 {

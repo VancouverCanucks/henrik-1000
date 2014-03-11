@@ -191,19 +191,6 @@
       }
     }
     
-    Scroller.prototype.slideToggle = function(target) {
-      el = $('#' + target);
-      if (el.css('right') === '-686px') {
-        el.show().animate({ right: '20px' }, 500);
-      } else {
-        el.animate({ right: '-686px' }, 500).delay(500).fadeOut();
-      }
-    }
-    
-    Scroller.prototype.fadeToggle = function(el) {
-      $('#' + el).fadeToggle();
-    }
-    
     return Scroller;
     
   })();
