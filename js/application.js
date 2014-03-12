@@ -146,6 +146,14 @@
         window.scroller.addSkrollrMatter();
       });
       
+      $('.facebook-btn').on('click', function() {
+        window.scroller.facebook();
+      });
+      
+      $('.twitter-btn').on('click', function() {
+        window.scroller.twitter();
+      });
+      
       if (!window.scroller.mobileCheck()) { this.skrollr = skrollr.init(); }
     }
     
@@ -205,6 +213,18 @@
     
     Scroller.prototype.mobileCheck = function() {
       return (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
+    }
+    
+    Scroller.prototype.facebook = function() {
+      this.sharePop('http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhenrik1000.canucks.com');
+    }
+    
+    Scroller.prototype.twitter = function() {
+      this.sharePop('https://twitter.com/intent/tweet?text=%23henrik1000+-+&url=http%3A%2F%2Fhenrik1000.canucks.com%2F');
+    }
+    
+    Scroller.prototype.sharePop = function(url) {
+      var pop = window.open(url,'#henrik1000','menubar=0,scrollbars=0,location=0,width=600,height=400');
     }
     
     return Scroller;

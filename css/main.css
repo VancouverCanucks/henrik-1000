@@ -518,6 +518,46 @@ iframe {
   padding: 0 85px;
 }
 
+.top-share {
+  position: fixed;
+  right: 0;
+  background: black;
+  opacity: 0.8;
+  z-index: 999999;
+  padding: 10px;
+  color: white;
+}
+
+.top-share p {
+  margin: 0;
+  padding: 0;
+}
+
+.top-share a {
+  color: white;
+}
+
+.bottom-share {
+  font-size: 50px;
+  width: 500px;
+  background: #003c7c;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  margin: 0 auto;
+  top: 1000px;
+}
+
+.bottom-share a {
+  color: white;
+  font-size: 100px;
+}
+
+.bottom-share a:hover {
+  color: #ededed;
+}
+
 #p16 {
   color: #003c7c;
 }
