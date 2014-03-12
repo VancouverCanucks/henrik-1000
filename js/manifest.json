@@ -65,6 +65,34 @@
     {
       "src": "img/props/05-cutout.gif",
       "holder": "p10"
+    },
+    {
+      "src": "img/props/06-allstar.png",
+      "holder": "p11"
+    },
+    {
+      "src": "img/props/06-andre.png",
+      "holder": "p12"
+    },
+    {
+      "src": "img/props/06-stare.png",
+      "holder": "p13"
+    },
+    {
+      "src": "img/props/06-cutout.png",
+      "holder": "p14"
+    },
+    {
+      "src": "img/props/08-a.png",
+      "holder": "p15"
+    },
+    {
+      "src": "img/props/08-swedes.png",
+      "holder": "p17"
+    },
+    {
+      "src": "img/props/08-cutout.png",
+      "holder": "p18"
     }
   ],
   "triggers": {

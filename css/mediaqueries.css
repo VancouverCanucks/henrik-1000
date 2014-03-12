@@ -183,7 +183,7 @@
   #t6 { top: 92px; }
   #t7 { top: 120px; }
   #t8 { display: none; }
-  #t9 { top: 88px; }
+  #t9 { top: 0; }
   #t10 { top: 157px; }
   #t11 { display: none; }
   #t12 { top: 45px; }
@@ -212,6 +212,18 @@
   #p09 { display: none; }
   #p10 { top: 1499px; right: 0; }
 
+  #p11 { display: none; }
+  #p12 { top: 2070px; right: 0; }
+  #p13 { display: none; }
+  #p14 { top: 2302px; right: 0; }
+  #p15 { display: none; }
+  #p16 { display: none; }
+  #p17 { display: none; }
+  #p18 { top: 2697px; right: 0; }
+  
+  #p12 img { height: 150px; }
+  #p14 img { height: 125px; }
+  #p18 img { height: 125px; }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -380,7 +392,15 @@
   #p07 { display: none; }
   #p08 { display: none; }
   #p09 { display: none; }
-  #p10 { top: 3528px; right: 0; }
+  #p10 { top: 3528px; right: 0; }  
+  #p11 { display: none; }
+  #p12 { top: 4970px; right: 15px; }
+  #p13 { display: none; }
+  #p14 { top: 5658px; right: 0; }
+  #p15 { top: 6800px; left: 100px; }
+  #p16 { display: none; }
+  #p17 { display: none; }
+  #p18 { top: 7140px; right: 0; }
 }
 
 @media (min-width: 980px) and (max-width: 1519px) {
@@ -543,6 +563,15 @@
   #p08 { top: 3920px; }
   #p09 { top: 4320px; right: 250px; }
   #p10 { top: 4197px; right: 0; }
+  #p10 { top: 4991px; right: 0; }
+  #p11 { top: 6350px; left: 200px; }
+  #p12 { top: 5950px; right: 15px; }
+  #p13 { top: 6700px; left: 15px; }
+  #p14 { top: 6772px; right: 0; }
+  #p15 { top: 8450px; left: 200px; }
+  #p16 { top: 8130px; right: 100px; font-size: 150px; }
+  #p17 { top: 8700px; right: 0; }
+  #p18 { top: 8846px; right: 0; }
 }
 
 @media (min-width: 1520px) {
@@ -674,7 +703,7 @@
   #t7 { top: 661px; }
   #t8 { top: 6300px; right: 45px; }
   #t9 { top: 155px; }
-  #t10 { top: 662px; }
+  #t10 { top: 575px; }
   #t11 { top: 8900px; right: 45px; }
   #t12 { top: 156px; }
   #t13 { top: 399px; }
@@ -699,10 +728,14 @@
   #p06 { top: 3700px; right: 10px; }
   #p07 { top: 4424px; right: 0; }
   #p08 { top: 4520px; }
-  #p09 { top: 5120px; right: 250px; }
+  #p09 { top: 5120px; right: 250px; }  
   #p10 { top: 4991px; right: 0; }
-  #p11 { top: 7450px; }
-  #p12 { }
-  #p13 { }
-  #p14 { }
+  #p11 { top: 7850px; left: 200px; }
+  #p12 { top: 7400px; right: 15px; }
+  #p13 { top: 8200px; left: 15px; }
+  #p14 { top: 8177px; right: 0; }
+  #p15 { top: 10350px; left: 200px; }
+  #p16 { top: 10150px; right: 100px; font-size: 150px; }
+  #p17 { top: 10800px; right: 0; }
+  #p18 { top: 10736px; right: 0; }
 }

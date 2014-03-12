@@ -35,15 +35,15 @@
             bank.appendChild(i);
           }
 
+          for (a in window.scroller.props) {
+            i = document.createElement('img');
+            i.src = window.scroller.props[a].src;
+            i.setAttribute('holder', window.scroller.props[a].holder);
+            i.setAttribute('onload', 'javascript:window.scroller.preloadPropProgress(\'' + window.scroller.props[a].src + '\', \'' + window.scroller.props[a].holder + '\');');
+            bank.appendChild(i);
+          }
+
           if (!window.scroller.mobileCheck()) {
-            for (a in window.scroller.props) {
-              i = document.createElement('img');
-              i.src = window.scroller.props[a].src;
-              i.setAttribute('holder', window.scroller.props[a].holder);
-              i.setAttribute('onload', 'javascript:window.scroller.preloadPropProgress(\'' + window.scroller.props[a].src + '\', \'' + window.scroller.props[a].holder + '\');');
-              bank.appendChild(i);
-            }
-            
             window.scroller.videoTag('shift-blue', 'The Shift', '3-tXCaeH_WU', 'vid1');
             window.scroller.videoTag('april-blue', 'Art Ross Trophy', 'Bq-aOBsr3hc', 'vid2');
             window.scroller.videoTag('april-blue', 'Art Ross Trophy', 'Bq-aOBsr3hc', 'vid3');
