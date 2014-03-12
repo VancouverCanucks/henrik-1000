@@ -318,6 +318,7 @@ section.light {
 
 .prop {
   position: absolute;
+  z-index: 5;
 }
 
 .prop.left {
