@@ -43,7 +43,12 @@
               i.setAttribute('onload', 'javascript:window.scroller.preloadPropProgress(\'' + window.scroller.props[a].src + '\', \'' + window.scroller.props[a].holder + '\');');
               bank.appendChild(i);
             }
-          
+            
+            window.scroller.videoTag('shift-blue', 'The Shift', '3-tXCaeH_WU', 'vid1');
+            window.scroller.videoTag('april-blue', 'Art Ross Trophy', 'Bq-aOBsr3hc', 'vid2');
+            window.scroller.videoTag('april-blue', 'Art Ross Trophy', 'Bq-aOBsr3hc', 'vid3');
+            window.scroller.videoTag('april-blue', 'Art Ross Trophy', 'Bq-aOBsr3hc', 'vid4');
+            
             window.scroller.addSkrollrMatter();
           } else {
             window.scroller.loaded = window.scroller.props.length;
@@ -179,7 +184,7 @@
       $('.modal').fadeOut();
     }
     
-    Scroller.prototype.videoTag = function(name, holder) {
+    Scroller.prototype.videoTag = function(name, title, ytkey, holder) {
       v = document.createElement('video');
       mp4 = document.createElement('source');
       webm = document.createElement('source');
@@ -192,6 +197,12 @@
       v.appendChild(mp4);
       v.appendChild(webm);
       document.getElementById(holder).appendChild(v);
+      a = document.createElement('a');
+      a.href = 'javascript:scroller.modalVideo(\'' + ytkey + '\', \'' + title + '\');';
+      btn = document.createElement('img');
+      btn.src = 'img/ui/play-btn.png';
+      a.appendChild(btn);
+      document.getElementById(holder).appendChild(a);
     }
     
     Scroller.prototype.mobileCheck = function() {
