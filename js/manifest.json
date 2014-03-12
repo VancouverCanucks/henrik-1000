@@ -161,7 +161,54 @@
         }
       ],
       "768": [
-        
+        {
+          "target": ".bookmark.young",
+          "params":
+          {
+            "data-500": "top:600px;",
+            "data-3480": "top:3480px;"
+          }
+        },
+        {
+          "target": ".bookmark.old",
+          "params":
+          {
+            "data-4675": "top:4675px;",
+            "data-13268": "top:13268px;"
+          }
+        },
+        {
+          "target": ".award .name",
+          "params":
+          {
+            "data-1": "-webkit-transform: rotateX(0deg);-moz-transform: rotateX(0deg);transform: rotateX(0deg);",
+            "data-1": "-webkit-transform: rotateX(180deg);-moz-transform: rotateX(180deg);transform: rotateX(180deg);"
+          }
+        },
+        {
+          "target": ".award .label",
+          "params":
+          {
+            "data-1": "-webkit-transform: rotateX(180deg);-moz-transform: rotateX(180deg);transform: rotateX(180deg);",
+            "data-1": "-webkit-transform: rotateX(0deg);-moz-transform: rotateX(0deg);transform: rotateX(0deg);"
+          }
+        },
+        {
+          "target": ".line1",
+          "params":
+          {
+            "data-1": "left:-100%;",
+            "data-1": "left:0;"
+          }
+        },
+        {
+          "target": ".line2",
+          "params":
+          {
+            "data-1": "right:-100%;",
+            "data-1": "right:0;"
+          }
+        }
       ],
       "420": [
         

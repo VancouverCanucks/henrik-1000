@@ -15,7 +15,157 @@
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
+  #s1 .window {
+    height: 368px;
+  }
+  
+  #s2, #s3, #s4, #s5, #s6, #s8, #s9, #s10, #s12, #s13, #s14, #s15 {
+    height: 1000px;
+  }
+  
+  #s12, #s13 {
+    height: 700px;
+  }
+  
+  #s7, #s10 {
+    height: 500px;
+  }
+  
+  #s9 {
+    height: 2000px;
+  }
+  
+  #s9 .timeline {
+    height: 1000px;
+  }
+  
+  #s11 {
+    height: 1387px;
+  }
 
+  #s11 .timeline {
+    height: 887px;
+  }
+  
+  .point {
+    width: 400px;
+  }
+  
+  .point.left {
+    left: -192px;
+  }
+  
+  .point.right {
+    left: 193px;
+  }
+  
+  .point.free {
+    width: 300px;
+  }
+  
+  .point .content h3 {
+    font-size: 20px;
+  }
+  
+  .headings h1 {
+    font-size: 110px;
+    padding: 35px 0 0 0;
+  }
+  
+  .headings h2 {
+    font-size: 113px;
+    margin: 0;
+    padding: 13px 0 0 0;
+  }
+  
+  .leadin {
+    font-size: 20px;
+  }
+  
+  .timeline .year {
+    font-size: 150px;
+  }
+  
+  .quote {
+    font-size: 30px;
+  }
+  
+  .quote-wrapper {
+    height: 500px;
+  }
+  
+  .video-embed, .video-container, video {
+    height: 500px;
+  }
+  
+  .video-container a {
+    top: -500px;
+    padding-top: 200px;
+    height: 300px;
+  }
+  
+  .awards {
+    width: 768px;
+    top: 400px;
+  }
+  
+  .awards .graphic {
+    width: 90px;
+    padding-top: 18px;
+  }
+  
+  .award {
+    width: 172px;
+    height: 172px;
+    padding: 0 13px;
+  }
+  
+  .awards .award .name {
+    width: 172px;
+    height: 172px;
+  }
+
+  .awards .award .name h3 {
+    font-size: 23px;
+    padding: 47px 0;
+  }
+
+  .awards .award .label {
+    width: 172px;
+    height: 172px;
+  }
+
+  .awards .award p {
+    width: 80%;
+    font-size: 18px;
+    top: 58px;
+  }
+  
+  #t1 { top: 111px; }
+  #t2 { top: 156px; }
+  #t3 { top: 392px; }
+  #t4 { top: 644px; }
+  #t5 { top: 112px; }
+  #t6 { top: 389px; }
+  #t7 { top: 641px; }
+  #t8 { top: 4450px; right: 15px; }
+  #t9 { top: 156px; }
+  #t10 { top: 392px; }
+  #t11 { top: 8000px; right: 15px; }
+  #t12 { top: 156px; }
+  #t13 { top: 389px; }
+  #t14 { top: 638px; }
+  #t15 { top: 5950px; right: 15px; }
+  #t16 { top: 156px; }
+  #t17 { top: 402px; }
+  #t18 { top: 9450px; right: 15px; }
+  #t19 { top: 90px; }
+  #t20 { top: 11350px; right: 15px; }
+  #t21 { top: 12050px; right: 15px; }
+  #t22 { top: 156px; }
+  #t23 { top: 389px; }
+  #t24 { top: 638px; }
+  #t25 { top: 13750px; right: 15px; }
 }
 
 @media (min-width: 980px) and (max-width: 1519px) {
@@ -58,6 +208,10 @@
   
   .point.right {
     left: 193px;
+  }
+  
+  .point.free {
+    width: 300px;
   }
   
   .headings h1 {
@@ -141,22 +295,24 @@
   #t5 { top: 112px; }
   #t6 { top: 389px; }
   #t7 { top: 641px; }
-  
+  #t8 { top: 5250px; right: 35px; }
   #t9 { top: 156px; }
   #t10 { top: 392px; }
-  
+  #t11 { top: 7150px; right: 35px; }
   #t12 { top: 156px; }
   #t13 { top: 389px; }
   #t14 { top: 638px; }
-  
+  #t15 { top: 9750px; right: 35px; }
   #t16 { top: 156px; }
   #t17 { top: 402px; }
-  
-  #t19, #t20 { top: 111px; }
-  
-  #t21 { top: 156px; }
-  #t22 { top: 389px; }
-  #t23 { top: 638px; }
+  #t18 { top: 11850px; right: 35px; }
+  #t19 { top: 89px; }
+  #t20 { top: 14100px; right: 35px; }
+  #t21 { top: 15320px; right: 35px; }
+  #t22 { top: 156px; }
+  #t23 { top: 389px; }
+  #t24 { top: 638px; }
+  #t25 { top: 17750px; right: 35px; }
 }
 
 @media (min-width: 1520px) {
@@ -286,22 +442,24 @@
   #t5 { top: 156px; }
   #t6 { top: 399px; }
   #t7 { top: 661px; }
-  
+  #t8 { top: 6300px; right: 45px; }
   #t9 { top: 155px; }
   #t10 { top: 662px; }
-  
+  #t11 { top: 8900px; right: 45px; }
   #t12 { top: 156px; }
   #t13 { top: 399px; }
   #t14 { top: 661px; }
-
+  #t15 { top: 12000px; right: 45px; }
   #t16 { top: 156px; }
   #t17 { top: 663px; }
-  
-  #t19, #t20 { top: 111px; }
-  
-  #t21 { top: 156px; }
-  #t22 { top: 399px; }
-  #t23 { top: 661px; }
+  #t18 { top: 14600px; right: 45px; }
+  #t19 { top: 90px; }
+  #t20 { top: 17250px; right: 45px; }
+  #t21 { top: 18750px; right: 45px; }
+  #t22 { top: 156px; }
+  #t23 { top: 399px; }
+  #t24 { top: 661px; }
+  #t25 { top: 21725px; right: 45px; }
 }
 
 .props {

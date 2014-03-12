@@ -219,7 +219,7 @@ section.light {
 }
 
 .point.free {
-  display: none;
+  position: absolute;
 }
 
 .point .o {
@@ -248,6 +248,7 @@ section.light {
 
 .point.free .content {
   width: 100%;
+  color: white;
 }
 
 .dark .point .content {
@@ -256,6 +257,10 @@ section.light {
 
 .light .point .content {
   border: 3px solid #003c7c;
+}
+
+.point.free .content {
+  border: 3px solid white;
 }
 
 .point.left .o {
