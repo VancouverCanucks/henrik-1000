@@ -34,16 +34,20 @@
             i.setAttribute('onload', 'javascript:window.scroller.preloadBGProgress(\'' + window.scroller.bgs[a].src + '\', \'' + window.scroller.bgs[a].holder + '\');');
             bank.appendChild(i);
           }
+
+          if (!window.scroller.mobileCheck()) {
+            for (a in window.scroller.props) {
+              i = document.createElement('img');
+              i.src = window.scroller.props[a].src;
+              i.setAttribute('holder', window.scroller.props[a].holder);
+              i.setAttribute('onload', 'javascript:window.scroller.preloadPropProgress(\'' + window.scroller.props[a].src + '\', \'' + window.scroller.props[a].holder + '\');');
+              bank.appendChild(i);
+            }
           
-          for (a in window.scroller.props) {
-            i = document.createElement('img');
-            i.src = window.scroller.props[a].src;
-            i.setAttribute('holder', window.scroller.props[a].holder);
-            i.setAttribute('onload', 'javascript:window.scroller.preloadPropProgress(\'' + window.scroller.props[a].src + '\', \'' + window.scroller.props[a].holder + '\');');
-            bank.appendChild(i);
+            window.scroller.addSkrollrMatter();
+          } else {
+            window.scroller.loaded = window.scroller.props.length;
           }
-          
-          window.scroller.addSkrollrMatter();
           
         });
       } else {
@@ -101,9 +105,7 @@
         triggerset = 980;
       } else if ($(window).width() >= 768 && $(window).width() < 980) {
         triggerset = 768;
-      } else if ($(window).width() >= 420 && $(window).width() < 768) {
-        triggerset = 420;
-      } else if ($(window).width() >= 0 && $(window).width() < 420) {
+      } else if ($(window).width() < 768) {
         triggerset = 0;
       } else {
         triggerset = 1520;
@@ -117,7 +119,6 @@
           oldFM = target.attr('frontmatter').split('|');
         
           for (fm in oldFM) {
-            console.log(oldFM[fm]);
             target.removeAttr(oldFM[fm]);
           }
         }
@@ -142,7 +143,7 @@
         window.scroller.addSkrollrMatter();
       });
       
-      this.skrollr = skrollr.init();
+      if (!window.scroller.mobileCheck()) { this.skrollr = skrollr.init(); }
     }
     
     Scroller.prototype.checkForCrapBrowser = function() {
@@ -176,6 +177,25 @@
       $('.modal h2').html('');
       $('#modal-content').html('');
       $('.modal').fadeOut();
+    }
+    
+    Scroller.prototype.videoTag = function(name, holder) {
+      v = document.createElement('video');
+      mp4 = document.createElement('source');
+      webm = document.createElement('source');
+      v.setAttribute('loop', true);
+      v.setAttribute('autoplay', true);
+      mp4.setAttribute('src', 'img/videobgs/' + name + '.mp4');
+      mp4.setAttribute('type', 'video/mp4');
+      webm.setAttribute('src', 'img/videobgs/' + name + '.webm');
+      webm.setAttribute('type', 'video/webm');
+      v.appendChild(mp4);
+      v.appendChild(webm);
+      document.getElementById(holder).appendChild(v);
+    }
+    
+    Scroller.prototype.mobileCheck = function() {
+      return (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
     }
     
     return Scroller;
