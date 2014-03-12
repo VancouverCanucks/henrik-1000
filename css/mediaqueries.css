@@ -232,6 +232,8 @@
   #p14 img { height: 125px; }
   #p18 img { height: 125px; }
   #p25 img { width: 150px; }
+  
+  .linemates { display: none; }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -416,6 +418,8 @@
   #p23 { display: none; }
   #p24 { display: none; }
   #p25 { top: 12974px; right: 0; }
+  
+  .linemates { display: none; }
 }
 
 @media (min-width: 980px) and (max-width: 1519px) {
@@ -567,6 +571,7 @@
   #t23 { top: 389px; }
   #t24 { top: 506px; }
   #t25 { top: 16550px; right: 35px; }
+  
   #p01 { top: 2322px; right: 15px; }
   #p02 { top: 2724px; left: 400px; }
   #p03 { top: 2724px; }
@@ -586,7 +591,6 @@
   #p16 { top: 8130px; right: 100px; font-size: 150px; }
   #p17 { top: 8700px; right: 0; }
   #p18 { top: 8846px; right: 0; }
-  
   #p19 { top: 9450px; z-index: 1000; }
   #p20 { top: 9700px; z-index: 1001; }
   #p21 { top: 10338px; right: 0; }
@@ -594,6 +598,26 @@
   #p23 { top: 15400px; right: 0; }
   #p24 { top: 16283px; }
   #p25 { top: 16179px; right: 0; }
+  
+  #bertuzzi { top: 3450px; }
+  #daniel1 { top: 3450px; }
+  #linden { top: 3800px; }
+  #daniel2 { top: 3800px; }
+  #king { top: 4100px; }
+  #carter { top: 4570px; }
+  #pyatt { top: 6250px; }
+  #daniel3 { top: 6250px; }
+  #naslund { top: 6800px; }
+  #bernier { top: 8325px; }
+  #daniel4 { top: 8325px; }
+  #samuelsson { top: 8750px; }
+  #tambellini { top: 10000px; }
+  #daniel5 { top: 10000px; }
+  #kassian { top: 15560px; }
+  #daniel6 { top: 15560px; }
+  #booth { top: 16330px; }
+  
+  .linemates img { height: 150px;}
 }
 
 @media (min-width: 1520px) {
