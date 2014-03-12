@@ -497,6 +497,27 @@ iframe {
   opacity: 0.9;
 }
 
+.linemates div {
+  position: absolute;
+  width: 50%;
+  text-align: right;
+  z-index: 1000;
+}
+
+.linemates .left {
+  left: 0;
+  text-align: right;
+}
+
+.linemates .right {
+  right: 0;
+  text-align: left;
+}
+
+.linemates div img {
+  padding: 0 85px;
+}
+
 #p16 {
   color: #003c7c;
 }
