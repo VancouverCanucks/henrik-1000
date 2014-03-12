@@ -211,7 +211,6 @@
   #p08 { display: none; }
   #p09 { display: none; }
   #p10 { top: 1499px; right: 0; }
-
   #p11 { display: none; }
   #p12 { top: 2070px; right: 0; }
   #p13 { display: none; }
@@ -221,9 +220,18 @@
   #p17 { display: none; }
   #p18 { top: 2697px; right: 0; }
   
+  #p19 { display: none; }
+  #p20 { display: none; }
+  #p21 { top: 3366px; right: 0; }
+  #p22 { display: none; }
+  #p23 { display: none; }
+  #p24 { display: none; }
+  #p25 { top: 5450px; right: 0; }
+  
   #p12 img { height: 150px; }
   #p14 img { height: 125px; }
   #p18 img { height: 125px; }
+  #p25 img { width: 150px; }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -244,7 +252,7 @@
   }
   
   #s9 {
-    height: 2000px;
+    height: 1500px;
   }
   
   #s9 .timeline {
@@ -374,14 +382,14 @@
   #t15 { top: 5950px; right: 15px; }
   #t16 { top: 156px; }
   #t17 { top: 402px; }
-  #t18 { top: 9450px; right: 15px; }
+  #t18 { top: 8950px; right: 15px; }
   #t19 { top: 90px; }
-  #t20 { top: 11350px; right: 15px; }
-  #t21 { top: 12050px; right: 15px; }
+  #t20 { top: 10850px; right: 15px; }
+  #t21 { top: 11550px; right: 15px; }
   #t22 { top: 156px; }
   #t23 { top: 389px; }
   #t24 { top: 638px; }
-  #t25 { top: 13750px; right: 15px; }
+  #t25 { top: 13250px; right: 15px; }
   
   #p01 { display:none; }
   #p02 { top: 2220px; }
@@ -400,7 +408,14 @@
   #p15 { top: 6800px; left: 100px; }
   #p16 { display: none; }
   #p17 { display: none; }
-  #p18 { top: 7140px; right: 0; }
+  #p18 { top: 7140px; right: 0; }  
+  #p19 { top: 7800px; z-index: 1000; }
+  #p20 { display: none; }
+  #p21 { top: 8634px; right: 0; }
+  #p22 { display: none; }
+  #p23 { display: none; }
+  #p24 { display: none; }
+  #p25 { top: 12974px; right: 0; }
 }
 
 @media (min-width: 980px) and (max-width: 1519px) {
@@ -418,7 +433,7 @@
   }
   
   #s9 {
-    height: 2600px;
+    height: 1500px;
   }
   
   #s9 .timeline {
@@ -426,7 +441,7 @@
   }
   
   #s11 {
-    height: 1387px;
+    height: 1268px;
   }
 
   #s11 .timeline {
@@ -473,7 +488,7 @@
   }
   
   .quote-wrapper {
-    height: 500px;
+    height: 380px;
   }
   
   .video-embed, .video-container, video {
@@ -544,15 +559,14 @@
   #t15 { top: 9750px; right: 35px; }
   #t16 { top: 156px; }
   #t17 { top: 402px; }
-  #t18 { top: 11850px; right: 35px; }
+  #t18 { top: 10800px; right: 35px; }
   #t19 { top: 89px; }
-  #t20 { top: 14100px; right: 35px; }
-  #t21 { top: 15320px; right: 35px; }
+  #t20 { top: 12950px; right: 35px; }
+  #t21 { top: 14150px; right: 35px; }
   #t22 { top: 156px; }
   #t23 { top: 389px; }
-  #t24 { top: 638px; }
-  #t25 { top: 17750px; right: 35px; }
-  
+  #t24 { top: 506px; }
+  #t25 { top: 16550px; right: 35px; }
   #p01 { top: 2322px; right: 15px; }
   #p02 { top: 2724px; left: 400px; }
   #p03 { top: 2724px; }
@@ -572,6 +586,14 @@
   #p16 { top: 8130px; right: 100px; font-size: 150px; }
   #p17 { top: 8700px; right: 0; }
   #p18 { top: 8846px; right: 0; }
+  
+  #p19 { top: 9450px; z-index: 1000; }
+  #p20 { top: 9700px; z-index: 1001; }
+  #p21 { top: 10338px; right: 0; }
+  #p22 { top: 15650px; left: 160px; }
+  #p23 { top: 15400px; right: 0; }
+  #p24 { top: 16283px; }
+  #p25 { top: 16179px; right: 0; }
 }
 
 @media (min-width: 1520px) {
@@ -580,7 +602,7 @@
     height: 568px;
   }
   
-  #s2, #s3, #s4, #s6, #s8, #s9, #s10, #s12, #s13, #s14, #s15 {
+  #s2, #s3, #s4, #s6, #s8, #s10, #s12, #s13, #s14, #s15 {
     height: 1495px;
   }
   
@@ -589,7 +611,7 @@
   }
   
   #s9 {
-    height: 3115px;
+    height: 2015px;
   }
   
   #s9 .timeline {
@@ -711,7 +733,7 @@
   #t15 { top: 12000px; right: 45px; }
   #t16 { top: 156px; }
   #t17 { top: 663px; }
-  #t18 { top: 14600px; right: 45px; }
+  #t18 { top: 13550px; right: 45px; }
   #t19 { top: 90px; }
   #t20 { top: 17250px; right: 45px; }
   #t21 { top: 18750px; right: 45px; }
@@ -738,4 +760,11 @@
   #p16 { top: 10150px; right: 100px; font-size: 150px; }
   #p17 { top: 10800px; right: 0; }
   #p18 { top: 10736px; right: 0; }
+  #p19 { top: 11800px; z-index: 1000; }
+  #p20 { top: 12100px; z-index: 1001; }
+  #p21 { top: 12812px; right: 0; }
+  #p22 { top: 19350px; left: 160px; }
+  #p23 { top: 19100px; right: 0; }
+  #p24 { top: 20100px; }
+  #p25 { top: 19954px; right: 0; }
 }

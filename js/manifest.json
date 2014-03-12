@@ -93,6 +93,34 @@
     {
       "src": "img/props/08-cutout.png",
       "holder": "p18"
+    },
+    {
+      "src": "img/props/09-brothers.png",
+      "holder": "p19"
+    },
+    {
+      "src": "img/props/09-signing.png",
+      "holder": "p20"
+    },
+    {
+      "src": "img/props/09-slidein.png",
+      "holder": "p21"
+    },
+    {
+      "src": "img/props/14-digits.png",
+      "holder": "p22"
+    },
+    {
+      "src": "img/props/14-stare.png",
+      "holder": "p23"
+    },
+    {
+      "src": "img/props/14-corner.png",
+      "holder": "p24"
+    },
+    {
+      "src": "img/props/14-action.png",
+      "holder": "p25"
     }
   ],
   "triggers": {
