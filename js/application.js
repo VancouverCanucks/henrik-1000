@@ -45,7 +45,7 @@
 
           if (!window.scroller.mobileCheck()) {
             window.scroller.videoTag('shift-blue', 'The Shift', '3-tXCaeH_WU', 'vid1');
-            window.scroller.videoTag('april-blue', 'Art Ross Trophy', 'Bq-aOBsr3hc', 'vid2');
+            //window.scroller.videoTag('april-blue', 'Art Ross Trophy', 'Bq-aOBsr3hc', 'vid2');
             window.scroller.videoTag('april-blue', 'Art Ross Trophy', 'Bq-aOBsr3hc', 'vid3');
             
             window.scroller.addSkrollrMatter();

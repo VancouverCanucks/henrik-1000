@@ -19,6 +19,10 @@
     {
       "src": "img/photobgs/05-congrats.jpg",
       "holder": "#s15"
+    },
+    {
+      "src": "img/photobgs/06-burrows.jpg",
+      "holder": "#s7"
     }
   ],
   "props": [
