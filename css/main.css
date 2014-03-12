@@ -201,6 +201,8 @@ section.light {
 .timeline {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .dark .timeline {
