@@ -256,6 +256,38 @@
             "data-4900": "opacity:0;",
             "data-5000": "opacity:1;"
           }
+        },
+        {
+          "target": "#p10",
+          "params":
+          {
+            "data-4150": "opacity:0;",
+            "data-4250": "opacity:1;"
+          }
+        },
+        {
+          "target": "#p10",
+          "params":
+          {
+            "data-4150": "opacity:0;",
+            "data-4250": "opacity:1;"
+          }
+        },
+        {
+          "target": "#p10",
+          "params":
+          {
+            "data-4150": "opacity:0;",
+            "data-4250": "opacity:1;"
+          }
+        },
+        {
+          "target": "#p10",
+          "params":
+          {
+            "data-4150": "opacity:0;",
+            "data-4250": "opacity:1;"
+          }
         }
       ],
       "980": [
