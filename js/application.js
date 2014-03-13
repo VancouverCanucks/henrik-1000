@@ -220,7 +220,7 @@
     }
     
     Scroller.prototype.twitter = function() {
-      this.sharePop('https://twitter.com/intent/tweet?text=%23henrik1000+-+&url=http%3A%2F%2Fhenrik1000.canucks.com%2F');
+      this.sharePop('https://twitter.com/intent/tweet?text=A+look+back+at+%23henrik1000+-+Check+it+out+at+&url=http%3A%2F%2Fhenrik1000.canucks.com');
     }
     
     Scroller.prototype.sharePop = function(url) {
