@@ -653,6 +653,16 @@
     height: 1495px;
   }
   
+  #s7 {
+    position: absolute;
+    z-index: 9999;
+    height: 1100px;
+  }
+  
+  #s8 {
+    margin-top: 1100px;
+  }
+  
   #s7, #s10 {
     height: 1100px;
   }
@@ -774,7 +784,7 @@
   #t8 { top: 6300px; right: 45px; }
   #t9 { top: 155px; }
   #t10 { top: 575px; }
-  #t11 { top: 8900px; right: 45px; }
+  #t11 { top: 50px; right: 45px; z-index: 999999; }
   #t12 { top: 156px; }
   #t13 { top: 399px; }
   #t14 { top: 661px; }
