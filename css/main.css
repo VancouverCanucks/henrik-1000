@@ -491,6 +491,7 @@ iframe {
 
 video {
   width: 100%;
+  background: #003c7c;
 }
 
 .video-container a {

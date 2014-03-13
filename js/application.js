@@ -60,7 +60,7 @@
     
     Scroller.prototype.preloadBGProgress = function(image, holder) {
       styles = {
-        'background-image': 'url(' + image + ')',
+        'background': '#003c7c url(' + image + ')',
         'background-repeat': 'no-repeat',
         'background-size': 'cover',
         'background-position': 'top center'
@@ -190,34 +190,32 @@
     }
     
     Scroller.prototype.videoTag = function(name, title, ytkey, holder) {
-      v = document.createElement('video');
-      mp4 = document.createElement('source');
-      webm = document.createElement('source');
-      fallback = document.createElement('div');
-      v.setAttribute('loop', true);
-      v.setAttribute('autoplay', true);
-      v.setAttribute('poster', 'img/videobgs/' + name + '.jpg');
-      mp4.setAttribute('src', 'img/videobgs/' + name + '.mp4');
-      mp4.setAttribute('type', 'video/mp4');
-      webm.setAttribute('src', 'img/videobgs/' + name + '.webm');
-      webm.setAttribute('type', 'video/webm');
-      fallback.className = 'window';
-      v.appendChild(mp4);
-      v.appendChild(webm);
-      v.appendChild(fallback);
-      document.getElementById(holder).appendChild(v);
+      if (!window.scroller.mobileCheck()) {
+        v = document.createElement('video');
+        mp4 = document.createElement('source');
+        webm = document.createElement('source');
+        v.setAttribute('loop', true);
+        v.setAttribute('autoplay', true);
+        v.setAttribute('poster', 'img/videobgs/' + name + '.jpg');
+        mp4.setAttribute('src', 'img/videobgs/' + name + '.mp4');
+        mp4.setAttribute('type', 'video/mp4');
+        webm.setAttribute('src', 'img/videobgs/' + name + '.webm');
+        webm.setAttribute('type', 'video/webm');
+        v.appendChild(mp4);
+        v.appendChild(webm);
+        document.getElementById(holder).appendChild(v);
+      } else {
+        v = document.createElement('div');
+        v.className = 'window';
+        v.setAttribute('style', 'background: #003c7c url(\'img/videobgs/' + name + '.jpg\'); background-repeat: no-repeat; background-size: cover; background-position: top center;');
+      }
       a = document.createElement('a');
       a.href = 'javascript:scroller.modalVideo(\'' + ytkey + '\', \'' + title + '\');';
       btn = document.createElement('img');
       btn.src = 'img/ui/play-btn.png';
       a.appendChild(btn);
+      document.getElementById(holder).appendChild(v);
       document.getElementById(holder).appendChild(a);
-      $('#' + holder + ' .window').css({
-        'background-image': 'url(' + 'img/videobgs/' + name + '.jpg' + ')',
-        'background-repeat': 'no-repeat',
-        'background-size': 'cover',
-        'background-position': 'top center'
-      });
     }
     
     Scroller.prototype.mobileCheck = function() {

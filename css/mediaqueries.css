@@ -352,6 +352,11 @@
     height: 300px;
   }
   
+  .video-container .window {
+    height: 500px;
+    width: 100%;
+  }
+  
   .awards {
     width: 768px;
     top: 400px;
@@ -547,6 +552,11 @@
     top: -900px;
     padding-top: 300px;
     height: 600px;
+  }
+  
+  .video-container .window {
+    height: 900px;
+    width: 100%;
   }
   
   .awards {
