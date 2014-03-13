@@ -123,7 +123,7 @@
   }
   
   .year {
-    font-size: 50px;
+    display: none;
   }
   
   .video-embed {

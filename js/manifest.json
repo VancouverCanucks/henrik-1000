@@ -396,11 +396,19 @@
           }
         },
         {
-          "target": ".award",
+          "target": ".award .name",
           "params":
           {
             "data-11600": "-webkit-transform: rotateX(0deg);-moz-transform: rotateX(0deg);transform: rotateX(0deg);",
             "data-11700": "-webkit-transform: rotateX(180deg);-moz-transform: rotateX(180deg);transform: rotateX(180deg);"
+          }
+        },
+        {
+          "target": ".award .label",
+          "params":
+          {
+            "data-11600": "-webkit-transform: rotateX(180deg);-moz-transform: rotateX(180deg);transform: rotateX(180deg);",
+            "data-11700": "-webkit-transform: rotateX(0deg);-moz-transform: rotateX(0deg);transform: rotateX(0deg);"
           }
         },
         {
