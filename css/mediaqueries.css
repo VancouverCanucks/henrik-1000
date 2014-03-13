@@ -141,7 +141,7 @@
   
   .awards {
     width: 290px;
-    margin-left: 30px;
+    margin: 0 auto;
     top: 120px;
   }
   
@@ -363,14 +363,13 @@
   }
   
   .awards .graphic {
-    width: 90px;
-    padding-top: 18px;
+    display: none;
   }
   
   .award {
-    width: 172px;
+    width: 23%;
     height: 172px;
-    padding: 0 13px;
+    padding: 0 1%;
   }
   
   .awards .award .name {
@@ -481,7 +480,13 @@
   }
   
   #s7, #s10 {
+    position: absolute;
+    z-index: 9999;
     height: 900px;
+  }
+  
+  #s8 {
+    margin-top: 900px;
   }
   
   #s9 {
@@ -493,6 +498,7 @@
   }
   
   #s11 {
+    margin-top: 900px;
     height: 1268px;
   }
 
@@ -614,14 +620,14 @@
   #t8 { top: 5250px; right: 35px; }
   #t9 { top: 156px; }
   #t10 { top: 392px; }
-  #t11 { top: 7150px; right: 35px; }
+  #t11 { top: 50px; right: 35px; z-index: 999999; }
   #t12 { top: 156px; }
   #t13 { top: 389px; }
   #t14 { top: 638px; }
   #t15 { top: 9750px; right: 35px; }
   #t16 { top: 156px; }
   #t17 { top: 402px; }
-  #t18 { top: 10800px; right: 35px; }
+  #t18 { top: 50px; right: 35px; }
   #t19 { top: 89px; }
   #t20 { top: 12950px; right: 35px; }
   #t21 { top: 14150px; right: 35px; }
