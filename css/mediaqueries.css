@@ -175,6 +175,17 @@
     max-height: 250px;
   }
   
+  .bottom-share {
+    width: 80%;
+    font-size: 20px;
+    top: 400px;
+  }
+  
+  .congrats {
+    font-size: 20px;
+    top: 5600px;
+  }
+  
   #t1 { top: 2px; }
   #t2 { top: 2px; }
   #t3 { top: 26px; }
