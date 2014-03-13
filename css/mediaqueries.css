@@ -546,6 +546,10 @@
     max-width: 400px;
   }
   
+  .bottom-share {
+    top: 600px;
+  }
+  
   #t1 { top: 111px; }
   #t2 { top: 156px; }
   #t3 { top: 392px; }
@@ -618,6 +622,11 @@
   #booth { top: 16330px; }
   
   .linemates img { height: 150px;}
+  
+  .congrats {
+    top: 16700px;
+    position: absolute;
+  }
 }
 
 @media (min-width: 1520px) {

@@ -139,6 +139,7 @@ body {
 
 .container {
   width: 100%;
+  position: absolute;
 }
 
 section {
@@ -562,4 +563,8 @@ iframe {
 
 #p16 {
   color: #003c7c;
+}
+
+#p21 {
+  position: absolute;
 }

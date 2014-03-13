@@ -113,7 +113,7 @@
       } else {
         triggerset = 1520;
       }
-
+      console.log(triggerset);
       for (a in this.triggers[triggerset]) {
         item = this.triggers[triggerset][a];
         target = $(item.target);
