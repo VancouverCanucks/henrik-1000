@@ -42,11 +42,11 @@
             i.setAttribute('onload', 'javascript:window.scroller.preloadPropProgress(\'' + window.scroller.props[a].src + '\', \'' + window.scroller.props[a].holder + '\');');
             bank.appendChild(i);
           }
-
+          
+          window.scroller.videoTag('shift-blue', 'The Shift', '3-tXCaeH_WU', 'vid1');
+          window.scroller.videoTag('april-blue', 'Record Breaker', 'Bq-aOBsr3hc', 'vid3');
+          
           if (!window.scroller.mobileCheck()) {
-            window.scroller.videoTag('shift-blue', 'The Shift', '3-tXCaeH_WU', 'vid1');
-            window.scroller.videoTag('april-blue', 'Record Breaker', 'Bq-aOBsr3hc', 'vid3');
-            
             window.scroller.addSkrollrMatter();
           } else {
             window.scroller.loaded = window.scroller.props.length;
@@ -95,7 +95,6 @@
       
       $('.preloader').fadeOut();
       $('.container').fadeIn();
-      $('.bookmark').fadeIn();
       
       this.initUI();
     }
@@ -134,7 +133,7 @@
         target.attr('frontmatter', frontmatter);
       }
       
-      if (this.skrollr !== null) { this.skrollr.refresh(); }
+      if (this.skrollr !== null) { $('.bookmark').fadeIn(); this.skrollr.refresh(); }
     }
     
     Scroller.prototype.initUI = function() {

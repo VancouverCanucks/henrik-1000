@@ -119,6 +119,7 @@ body {
   z-index: 100;
   position: absolute;
   padding-top: 250px;
+  display: none;
 }
 
 .bookmark .tip {
@@ -486,6 +487,10 @@ iframe {
 .video-embed {
   background: #003c7c;
   overflow: hidden;
+}
+
+video {
+  width: 100%;
 }
 
 .video-container a {
