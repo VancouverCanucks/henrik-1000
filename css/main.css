@@ -526,7 +526,7 @@ iframe {
   right: 0;
   background: black;
   opacity: 0.8;
-  z-index: 999999;
+  z-index: 10000;
   padding: 10px;
   color: white;
 }
