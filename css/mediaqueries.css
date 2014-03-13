@@ -314,6 +314,7 @@
   
   .quote-wrapper {
     height: 500px;
+    font-size: 12px;
   }
   
   .video-embed, .video-container, video {
@@ -493,6 +494,7 @@
   
   .quote-wrapper {
     height: 380px;
+    font-size: 20px;
   }
   
   .video-embed, .video-container, video {
@@ -700,6 +702,7 @@
   
   .quote-wrapper {
     height: 520px;
+    font-size: 30px;
   }
   
   .video-embed, .video-container, video {

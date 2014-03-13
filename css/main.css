@@ -529,6 +529,7 @@ iframe {
   z-index: 10000;
   padding: 10px;
   color: white;
+  display: none;
 }
 
 .top-share p {
