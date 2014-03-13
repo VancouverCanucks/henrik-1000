@@ -12,6 +12,10 @@
     width: 100%;
   }
   
+  body {
+    height: 5980px !important;
+  }
+  
   .bookmark {
     display: none !important;
   }
@@ -187,6 +191,14 @@
     top: 5600px;
   }
   
+  .bottom-share {
+    top: 200px;
+  }
+  
+  .bottom-share a {
+    font-size: 40px;
+  }
+  
   #t1 { top: 2px; }
   #t2 { top: 2px; }
   #t3 { top: 26px; }
@@ -249,6 +261,11 @@
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
+  
+  body {
+    height: 14200px !important;
+  }
+  
   #s1 .window {
     height: 368px;
   }
@@ -380,6 +397,15 @@
     max-width: 300px;
   }
   
+  .congrats {
+    top: 13500px;
+    font-size: 100px;
+  }
+  
+  .bottom-share {
+    top: 600px;
+  }
+  
   #t1 { top: 111px; }
   #t2 { top: 156px; }
   #t3 { top: 392px; }
@@ -437,8 +463,12 @@
 
 @media (min-width: 980px) and (max-width: 1519px) {
   
+  body {
+    height: 17600px !important;
+  }
+  
   #s1 .window {
-    height: 568px;
+    height: 468px;
   }
   
   #s1 {
@@ -745,6 +775,11 @@
     top: -1100px;
     padding-top: 500px;
     height: 600px;
+  }
+  
+  .video-container .window {
+    height: 1100px;
+    width: 100%;
   }
   
   .awards {

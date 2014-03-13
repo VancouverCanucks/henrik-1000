@@ -113,7 +113,7 @@
       } else {
         triggerset = 1520;
       }
-      console.log(triggerset);
+
       for (a in this.triggers[triggerset]) {
         item = this.triggers[triggerset][a];
         target = $(item.target);
@@ -194,14 +194,18 @@
       v = document.createElement('video');
       mp4 = document.createElement('source');
       webm = document.createElement('source');
+      fallback = document.createElement('div');
       v.setAttribute('loop', true);
       v.setAttribute('autoplay', true);
+      v.setAttribute('poster', 'img/videobgs/' + name + '.jpg');
       mp4.setAttribute('src', 'img/videobgs/' + name + '.mp4');
       mp4.setAttribute('type', 'video/mp4');
       webm.setAttribute('src', 'img/videobgs/' + name + '.webm');
       webm.setAttribute('type', 'video/webm');
+      fallback.className = 'window';
       v.appendChild(mp4);
       v.appendChild(webm);
+      v.appendChild(fallback);
       document.getElementById(holder).appendChild(v);
       a = document.createElement('a');
       a.href = 'javascript:scroller.modalVideo(\'' + ytkey + '\', \'' + title + '\');';
@@ -209,6 +213,12 @@
       btn.src = 'img/ui/play-btn.png';
       a.appendChild(btn);
       document.getElementById(holder).appendChild(a);
+      $('#' + holder + ' .window').css({
+        'background-image': 'url(' + 'img/videobgs/' + name + '.jpg' + ')',
+        'background-repeat': 'no-repeat',
+        'background-size': 'cover',
+        'background-position': 'top center'
+      });
     }
     
     Scroller.prototype.mobileCheck = function() {
@@ -224,7 +234,7 @@
     }
     
     Scroller.prototype.sharePop = function(url) {
-      var pop = window.open(url,'#henrik1000','menubar=0,scrollbars=0,location=0,width=600,height=400');
+      this.popup = window.open(url, '#henrik1000', 'menubar=0,scrollbars=0,location=0,width=600,height=400');
     }
     
     return Scroller;
