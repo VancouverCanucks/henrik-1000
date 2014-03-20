@@ -330,7 +330,7 @@
   }
   
   .timeline .year {
-    font-size: 150px;
+    display: none;
   }
   
   .quote {
@@ -608,6 +608,10 @@
   
   .bottom-share {
     top: 600px;
+  }
+  
+  .year {
+    display: none;
   }
   
   #t1 { top: 111px; }
