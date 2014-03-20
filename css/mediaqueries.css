@@ -270,6 +270,10 @@
     height: 1000px;
   }
   
+  #s4 .timeline {
+    height: 1000px;
+  }
+  
   #s12, #s13 {
     height: 700px;
   }
@@ -628,7 +632,7 @@
   #t4 { top: 644px; }
   #t5 { top: 112px; }
   #t6 { top: 389px; }
-  #t7 { top: 641px; }
+  #t7 { top: 539px; }
   #t8 { top: 5250px; right: 35px; }
   #t9 { top: 156px; }
   #t10 { top: 392px; }
