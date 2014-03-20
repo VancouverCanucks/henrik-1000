@@ -112,13 +112,13 @@
     float: left;
   }
 
-  .point .content h3 {
+  .point .content h4 {
     font-size: 15px;
     margin: 0;
     padding: 10px 0 10px 10px;
   }
 
-  .point .content p {
+  .point .content p, .point .content h3 {
     display: none;
   }
   
@@ -312,6 +312,10 @@
   
   .point .content h3 {
     font-size: 20px;
+  }
+  
+  .point .content h4 {
+    display: none;
   }
   
   .headings h1 {
@@ -520,6 +524,10 @@
   
   .point.free {
     width: 300px;
+  }
+  
+  .point .content h4 {
+    display: none;
   }
   
   .headings h1 {
@@ -764,6 +772,10 @@
   
   .point.right {
     left: 343px;
+  }
+  
+  .point .content h4 {
+    display: none;
   }
   
   .leadin {
