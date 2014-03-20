@@ -152,9 +152,11 @@
   }
   
   .awards {
-    width: 290px;
     margin: 0 auto;
+    position: relative;
     top: 120px;
+    width: 90%;
+    margin-left: 10%;
   }
   
   .awards .graphic {
@@ -162,25 +164,25 @@
   }
   
   .awards .award {
-    width: 140px;
-    height: 140px;
-    margin: 0 2.5px 2.5px 0;
+    width: 46%;
+    margin: 2%;
+    float: left;
+    padding: 8% 0;
   }
   
   .awards .name {
-    width: 140px;
-    position: relative;
-    height: 140px;
+    font-size: 12px;
   }
   
   .awards .name h3 {
-    font-size: 15px;
-    position: relative;
-    top: 45px;
+    color: white;
+    text-align: center;
   }
   
   .awards .label {
-    display: none;
+    color: #809ebe;
+    text-align: center;
+    font-size: 12px;
   }
   
   .prop img {
@@ -375,6 +377,74 @@
   .video-container .window {
     height: 500px;
     width: 100%;
+  }
+  
+  .awards {
+    clear: both;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .awards .graphic, .awards .award {
+    float: left;
+  }
+
+  .awards .graphic img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .awards .award {
+    position:relative;
+  }
+
+  .awards .award .name {
+    position: absolute;
+    border: 1px solid #809ebe;
+    border-radius: 50%;
+    margin: 0 auto;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  .awards .award .name h3 {
+    color: #809ebe;
+    text-align: center;
+  }
+
+  .awards .award .label {
+    position: absolute;
+    background: #809ebe;
+    color: #003c7c;
+    border-radius: 50%;
+    margin: 0 auto;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-179deg);
+    transform: rotateY(-179deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  .awards .award p {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
   }
   
   .awards {
@@ -591,6 +661,74 @@
   .video-container .window {
     height: 900px;
     width: 100%;
+  }
+  
+  .awards {
+    clear: both;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .awards .graphic, .awards .award {
+    float: left;
+  }
+
+  .awards .graphic img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .awards .award {
+    position:relative;
+  }
+
+  .awards .award .name {
+    position: absolute;
+    border: 1px solid #809ebe;
+    border-radius: 50%;
+    margin: 0 auto;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  .awards .award .name h3 {
+    color: #809ebe;
+    text-align: center;
+  }
+
+  .awards .award .label {
+    position: absolute;
+    background: #809ebe;
+    color: #003c7c;
+    border-radius: 50%;
+    margin: 0 auto;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-179deg);
+    transform: rotateY(-179deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  .awards .award p {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
   }
   
   .awards {
@@ -832,6 +970,74 @@
   .video-container .window {
     height: 1100px;
     width: 100%;
+  }
+  
+  .awards {
+    clear: both;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .awards .graphic, .awards .award {
+    float: left;
+  }
+
+  .awards .graphic img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .awards .award {
+    position:relative;
+  }
+
+  .awards .award .name {
+    position: absolute;
+    border: 1px solid #809ebe;
+    border-radius: 50%;
+    margin: 0 auto;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  .awards .award .name h3 {
+    color: #809ebe;
+    text-align: center;
+  }
+
+  .awards .award .label {
+    position: absolute;
+    background: #809ebe;
+    color: #003c7c;
+    border-radius: 50%;
+    margin: 0 auto;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-179deg);
+    transform: rotateY(-179deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  .awards .award p {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
   }
   
   .awards {

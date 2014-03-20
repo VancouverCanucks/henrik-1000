@@ -86,14 +86,16 @@
       }
     }
     
-    Scroller.prototype.setWindowHeights = function() {
+    Scroller.prototype.removeBank = function() {
       bank = document.getElementById('imagebank');
       bank.parentNode.removeChild(bank);
     }
     
+    Scroller.prototype.setWindowHeights = function() { }
+    
     Scroller.prototype.initScroller = function() {
       this.progressbar.end();
-      this.setWindowHeights();
+      this.removeBank();
       
       $('.preloader').fadeOut();
       $('.container').fadeIn();
