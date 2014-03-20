@@ -25,7 +25,7 @@
   #s5 { height: 228px; }
   #s7, #s10 { display: none; }
   #s9 { height: 784px; }
-  #s11 { height: 724px; }
+  #s11 { height: 645px; }
   
   #s11 .timeline { height: 500px; }
   
@@ -305,7 +305,7 @@
   }
   
   #s11 {
-    height: 1387px;
+    height: 1347px;
   }
 
   #s11 .timeline {
@@ -357,11 +357,16 @@
   
   .quote {
     font-size: 30px;
+    padding: 50px 0;
   }
   
   .quote-wrapper {
     height: 500px;
     font-size: 12px;
+  }
+  
+  #s11 .quote-wrapper {
+    height: 460px;
   }
   
   .video-embed, .video-container, video {
@@ -787,7 +792,7 @@
   #t5 { top: 112px; }
   #t6 { top: 389px; }
   #t7 { top: 539px; }
-  #t8 { top: 5250px; right: 35px; }
+  #t8 { top: 5100px; right: 35px; }
   #t9 { top: 156px; }
   #t10 { top: 392px; }
   #t11 { top: 50px; right: 35px; z-index: 999999; }
