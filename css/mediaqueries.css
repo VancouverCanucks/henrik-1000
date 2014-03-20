@@ -280,12 +280,16 @@
     height: 368px;
   }
   
-  #s2, #s3, #s4, #s5, #s6, #s8, #s9, #s10, #s12, #s13, #s14, #s15 {
+  #s2, #s3, #s4, #s6, #s8, #s9, #s10, #s12, #s13, #s14, #s15 {
     height: 1000px;
   }
   
   #s4 .timeline {
     height: 1000px;
+  }
+  
+  #s5 {
+    height: 900px;
   }
   
   #s12, #s13 {
@@ -363,6 +367,10 @@
   .quote-wrapper {
     height: 500px;
     font-size: 12px;
+  }
+  
+  #s5 .quote-wrapper {
+    height: 400px;
   }
   
   #s11 .quote-wrapper {
@@ -508,10 +516,10 @@
   #t5 { top: 112px; }
   #t6 { top: 389px; }
   #t7 { top: 500px; }
-  #t8 { top: 4450px; right: 15px; }
+  #t8 { top: 4370px; right: 15px; }
   #t9 { top: 156px; }
   #t10 { top: 392px; }
-  #t11 { top: 8000px; right: 15px; }
+  #t11 { top: 5990px; right: 15px; }
   #t12 { top: 156px; }
   #t13 { top: 389px; }
   #t14 { top: 638px; }
