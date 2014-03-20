@@ -6,6 +6,7 @@
     
     function Scroller() {
       window.scroller = this;
+      this.windowWidth = 0;
       this.loadData = 0;
       this.loaded = 0;
       this.progressbar = progressJs();
@@ -103,19 +104,19 @@
     Scroller.prototype.addSkrollrMatter = function() {
       
       if ($(window).width() >= 1520) {
-        triggerset = 1520;
+        this.windowWidth = 1520;
       } else if ($(window).width() >= 980 && $(window).width() < 1520) {
-        triggerset = 980;
+        this.windowWidth = 980;
       } else if ($(window).width() >= 768 && $(window).width() < 980) {
-        triggerset = 768;
+        this.windowWidth = 768;
       } else if ($(window).width() < 768) {
-        triggerset = 0;
+        this.windowWidth = 0;
       } else {
-        triggerset = 1520;
+        this.windowWidth = 1520;
       }
 
-      for (a in this.triggers[triggerset]) {
-        item = this.triggers[triggerset][a];
+      for (a in this.triggers[this.windowWidth]) {
+        item = this.triggers[this.windowWidth][a];
         target = $(item.target);
         
         if (target.attr('frontmatter')) {
@@ -169,7 +170,7 @@
       player = document.createElement('iframe');
       player.src = 'http://www.youtube.com/embed/' + key + '?version=2&controls=1&autoplay=1';
       player.className = 'vid-window';
-      player.width = 853;
+      player.width = $(window).width();
       player.height = 480;
       player.setAttribute('frameborder', 0);
       document.getElementById(holder).appendChild(player);
