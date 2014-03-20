@@ -32,6 +32,14 @@
   
   #s2, #s12, #s13, #s15 { height: 395px; }
   
+  .headings {
+    padding: 10px 0 0 0;
+  }
+  
+  #s1 .leadin {
+    margin-top: 6px;
+  }
+  
   .overlay-timeline {
     display: none;
   }
