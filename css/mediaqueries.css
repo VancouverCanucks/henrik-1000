@@ -606,7 +606,7 @@
   
   #s11 {
     margin-top: 900px;
-    height: 1268px;
+    height: 1227pxs;
   }
 
   #s11 .timeline {
@@ -663,6 +663,22 @@
   
   #s5 .quote-wrapper {
     height: 280px;
+  }
+  
+  #s9 .quote-wrapper {
+    height: 340px;
+  }
+  
+  #s11 .quote-wrapper {
+    height: 340px;
+  }
+  
+  #s12a .quote-wrapper {
+    height: 340px;
+  }
+  
+  #s12a .quote {
+    height: 240px;
   }
   
   .video-embed, .video-container, video {
@@ -807,22 +823,22 @@
   #t8 { top: 5100px; right: 35px; }
   #t9 { top: 156px; }
   #t9a { top: 392px; }
-  #t10 { top: 392px; }
+  #t10 { top: 383px; }
   #t11 { top: 50px; right: 35px; z-index: 999999; }
   #t12 { top: 156px; }
   #t13 { top: 389px; }
   #t14 { top: 638px; }
   #t15 { top: 9750px; right: 35px; }
-  #t16 { top: 156px; }
-  #t17 { top: 402px; }
+  #t16 { top: 376px; }
+  #t17 { top: 799px; }
   #t18 { top: 50px; right: 35px; }
   #t19 { top: 89px; }
   #t20 { top: 12950px; right: 35px; }
-  #t21 { top: 14150px; right: 35px; }
+  #t21 { top: 14450px; right: 35px; }
   #t22 { top: 156px; }
   #t23 { top: 389px; }
   #t24 { top: 506px; }
-  #t25 { top: 16550px; right: 35px; }
+  #t25 { top: 16850px; right: 35px; }
   
   #p01 { top: 2322px; right: 15px; }
   #p02 { top: 2724px; left: 400px; }
@@ -840,16 +856,16 @@
   #p13 { top: 6700px; left: 15px; }
   #p14 { top: 6772px; right: 0; }
   #p15 { top: 8450px; left: 200px; }
-  #p16 { top: 8130px; right: 100px; font-size: 150px; }
+  #p16 { top: 8943px; }
   #p17 { top: 8700px; right: 0; }
   #p18 { top: 8846px; right: 0; }
   #p19 { top: 9450px; z-index: 1000; }
   #p20 { top: 9700px; z-index: 1001; }
   #p21 { top: 10338px; right: 0; }
-  #p22 { top: 15650px; left: 160px; }
-  #p23 { top: 15400px; right: 0; }
-  #p24 { top: 16283px; }
-  #p25 { top: 16179px; right: 0; }
+  #p22 { top: 15950px; left: 160px; }
+  #p23 { top: 15589px; right: 0; }
+  #p24 { top: 16583px; }
+  #p25 { top: 16512px; right: 0; }
   
   #bertuzzi { top: 3450px; }
   #daniel1 { top: 3450px; }
@@ -865,14 +881,14 @@
   #samuelsson { top: 8750px; }
   #tambellini { top: 10000px; }
   #daniel5 { top: 10000px; }
-  #kassian { top: 15560px; }
-  #daniel6 { top: 15560px; }
-  #booth { top: 16330px; }
+  #kassian { top: 15800px; }
+  #daniel6 { top: 15800px; }
+  #booth { top: 16630px; }
   
   .linemates img { height: 150px;}
   
   .congrats {
-    top: 16700px;
+    top: 17000px;
     position: absolute;
   }
 }

@@ -411,16 +411,16 @@
           "target": ".line1",
           "params":
           {
-            "data-16100": "left:-100%;",
-            "data-16200": "left:0;"
+            "data-16800": "left:-100%;",
+            "data-16900": "left:0;"
           }
         },
         {
           "target": ".line2",
           "params":
           {
-            "data-16100": "right:-100%;",
-            "data-16200": "right:0;"
+            "data-16800": "right:-100%;",
+            "data-16900": "right:0;"
           }
         },
         {
@@ -548,7 +548,7 @@
           "params":
           {
             "data-8300": "opacity:0;",
-            "data-8400": "opacity:0;"
+            "data-8400": "opacity:1;"
           }
         },
         {
