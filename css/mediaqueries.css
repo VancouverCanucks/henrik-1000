@@ -309,11 +309,15 @@
   }
   
   #s11 {
-    height: 1347px;
+    height: 1287px;
   }
 
   #s11 .timeline {
     height: 887px;
+  }
+  
+  #s12a {
+    height: 340px;
   }
   
   .point {
@@ -374,7 +378,7 @@
   }
   
   #s11 .quote-wrapper {
-    height: 460px;
+    height: 400px;
   }
   
   .video-embed, .video-container, video {
@@ -971,6 +975,10 @@
     height: 440px;
   }
   
+  #s12a .quote {
+    height: 320px;
+  }
+  
   .video-embed, .video-container, video {
     height: 1100px;
   }
@@ -1100,23 +1108,23 @@
   #t7 { top: 661px; }
   #t8 { top: 6350px; right: 45px; }
   #t9 { top: 155px; }
-  #t9a { top: 508px; }
-  #t10 { top: 575px; }
+  #t9a { top: 420px; }
+  #t10 { top: 472px; }
   #t11 { top: 50px; right: 45px; z-index: 999999; }
   #t12 { top: 156px; }
-  #t13 { top: 399px; }
+  #t13 { top: 396px; }
   #t14 { top: 661px; }
   #t15 { top: 12000px; right: 45px; }
   #t16 { top: 156px; }
   #t17 { top: 663px; }
   #t18 { top: 50px; right: 45px; }
   #t19 { top: 90px; }
-  #t20 { top: 16150px; right: 45px; }
-  #t21 { top: 17650px; right: 45px; }
+  #t20 { top: 16050px; right: 45px; }
+  #t21 { top: 18100px; right: 45px; }
   #t22 { top: 156px; }
   #t23 { top: 399px; }
   #t24 { top: 661px; }
-  #t25 { top: 20625px; right: 45px; }
+  #t25 { top: 21050px; right: 45px; }
   
   #p01 { top: 2757px; right: 15px; }
   #p02 { top: 3024px; left: 500px; }
@@ -1133,16 +1141,20 @@
   #p13 { top: 8200px; left: 15px; }
   #p14 { top: 8177px; right: 0; }
   #p15 { top: 10350px; left: 200px; }
-  #p16 { top: 10695px; }
+  #p16 { top: 10958px; }
   #p17 { top: 10800px; right: 0; }
   #p18 { top: 10736px; right: 0; }
   #p19 { top: 11800px; z-index: 1000; }
   #p20 { top: 12100px; z-index: 1001; }
-  #p21 { top: 12812px; right: 0; }
-  #p22 { top: 19350px; left: 160px; }
-  #p23 { top: 19100px; right: 0; }
-  #p24 { top: 20100px; }
-  #p25 { top: 19829px; right: 0; }
+  #p21 { top: 12732px; right: 0; }
+  #p22 { top: 19800px; left: 160px; }
+  #p23 { top: 19509px; right: 0; }
+  #p24 { top: 20582px; }
+  #p25 { top: 20392px; right: 0; }
+  
+  #p16 img {
+    width: 600px;
+  }
   
   #bertuzzi { top: 4100px; }
   #daniel1 { top: 4100px; }
@@ -1158,7 +1170,7 @@
   #samuelsson { top: 11150px; }
   #tambellini { top: 12400px; }
   #daniel5 { top: 12400px; }
-  #kassian { top: 19350px; }
-  #daniel6 { top: 19350px; }
-  #booth { top: 20300px; }
+  #kassian { top: 19750px; }
+  #daniel6 { top: 19750px; }
+  #booth { top: 20500px; }
 }
