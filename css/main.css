@@ -359,7 +359,7 @@ section.light {
   font-style: italic;
 }
 
-#s11 .quote {
+#s11 .quote, #s12a .quote {
   background: white;
   color: #003c7c;
 }

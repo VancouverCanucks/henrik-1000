@@ -35,12 +35,8 @@
       "holder": "p02"
     },
     {
-      "src": "img/props/04-chalk-33.gif",
-      "holder": "xo-33"
-    },
-    {
-      "src": "img/props/04-chalk-22.gif",
-      "holder": "xo-22"
+      "src": "img/props/04-chalk.png",
+      "holder": "p03"
     },
     {
       "src": "img/props/04-action.gif",
@@ -71,10 +67,6 @@
       "holder": "p10"
     },
     {
-      "src": "img/props/06-allstar.png",
-      "holder": "p11"
-    },
-    {
       "src": "img/props/06-andre.png",
       "holder": "p12"
     },
@@ -90,6 +82,10 @@
       "src": "img/props/08-a.png",
       "holder": "p15"
     },
+    {
+      "src": "img/props/08-hats.png",
+      "holder": "p16"
+    },    
     {
       "src": "img/props/08-swedes.png",
       "holder": "p17"
@@ -197,8 +193,8 @@
           "target": "#p03",
           "params":
           {
-            "data-19700": "opacity:0;",
-            "data-20100": "opacity:1;"
+            "data-2700": "opacity:0;",
+            "data-2800": "opacity:1;"
           }
         },
         {
@@ -301,8 +297,8 @@
           "target": "#p16",
           "params":
           {
-            "data-9900": "opacity:0;",
-            "data-10000": "opacity:1;"
+            "data-10100": "opacity:0;",
+            "data-10200": "opacity:1;"
           }
         },
         {
@@ -447,8 +443,8 @@
           "target": "#p03",
           "params":
           {
-            "data-19400": "opacity:0;",
-            "data-19500": "opacity:1;"
+            "data-2300": "opacity:0;",
+            "data-2400": "opacity:1;"
           }
         },
         {
@@ -551,8 +547,8 @@
           "target": "#p16",
           "params":
           {
-            "data-9900": "opacity:0;",
-            "data-10000": "opacity:0;"
+            "data-8300": "opacity:0;",
+            "data-8400": "opacity:0;"
           }
         },
         {

@@ -47,13 +47,12 @@
           window.scroller.videoTag('shift-blue', 'The Shift', '3-tXCaeH_WU', 'vid1');
           window.scroller.videoTag('april-blue', 'Record Breaker', 'Bq-aOBsr3hc', 'vid3');
           
-          if (!window.scroller.mobileCheck() && $(window).width() > 767) {
+          if (!window.scroller.mobileCheck()) {
             $('.bookmark').show();
             window.scroller.addSkrollrMatter();
           } else {
             window.scroller.loaded = window.scroller.props.length;
           }
-          
         });
       } else {
         this.initScroller();
