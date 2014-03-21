@@ -161,16 +161,16 @@
           "target": ".line1",
           "params":
           {
-            "data-19700": "left:-100%;",
-            "data-20100": "left:0;"
+            "data-21000": "left:-100%;",
+            "data-21100": "left:0;"
           }
         },
         {
           "target": ".line2",
           "params":
           {
-            "data-19700": "right:-100%;",
-            "data-20100": "right:0;"
+            "data-21000": "right:-100%;",
+            "data-21100": "right:0;"
           }
         },
         {
